@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation API Citations - [Votre Nom]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1e40af;
+            --secondary: #64748b;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --code-bg: #1e293b;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 20px;
+            margin-bottom: 3rem;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+
+        .section {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            color: var(--dark);
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .method-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-right: 1rem;
+        }
+
+        .get { background: #10b981; color: white; }
+        .post { background: #3b82f6; color: white; }
+        .put { background: #f59e0b; color: white; }
+        .delete { background: #ef4444; color: white; }
+
+        .endpoint {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--primary);
+        }
+
+        .endpoint-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .endpoint-url {
+            font-family: 'Fira Code', monospace;
+            font-size: 1.1rem;
+            color: var(--dark);
+        }
+
+        code {
+            font-family: 'Fira Code', monospace;
+            background: var(--code-bg);
+            color: #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+            display: block;
+            overflow-x: auto;
+            margin: 1rem 0;
+            line-height: 1.8;
+        }
+
+        .inline-code {
+            font-family: 'Fira Code', monospace;
+            background: var(--light);
+            color: var(--primary);
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            display: inline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--light);
+        }
+
+        th {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background: var(--light);
+        }
+
+        .response-example {
+            background: var(--code-bg);
+            color: #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+
+        .toc {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .toc h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            padding: 0.5rem 0;
+        }
+
+        .toc a {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: var(--primary);
+        }
+
+        .info-box {
+            background: #dbeafe;
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 5px;
+        }
+
+        .warning-box {
+            background: #fef3c7;
+            border-left: 4px solid var(--warning);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .endpoint-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            code {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html#projects" class="back-link">← Retour au portfolio</a>
+
+        <div class="header">
+            <h1>📚 Documentation API Citations</h1>
+            <p>Guide complet d'utilisation de l'API REST de gestion de citations</p>
+        </div>
+
+        <!-- Table des matières -->
+        <div class="toc">
+            <h3>📑 Table des matières</h3>
+            <ul>
+                <li><a href="#introduction">1. Introduction</a></li>
+                <li><a href="#authentication">2. Authentification</a></li>
+                <li><a href="#endpoints">3. Endpoints disponibles</a></li>
+                <li><a href="#errors">4. Gestion des erreurs</a></li>
+                <li><a href="#examples">5. Exemples d'utilisation</a></li>
+            </ul>
+        </div>
+
+        <!-- Introduction -->
+        <div class="section" id="introduction">
+            <h2>1. Introduction</h2>
+            <p>L'API Citations est une API REST complète permettant de gérer une collection de citations. Elle offre toutes les opérations CRUD (Create, Read, Update, Delete) avec une architecture RESTful propre.</p>
+            
+            <h3>🎯 Objectifs du projet</h3>
+            <ul style="margin-left: 2rem; color: var(--secondary);">
+                <li>Comprendre les principes de l'architecture REST</li>
+                <li>Implémenter un CRUD complet</li>
+                <li>Gérer correctement les codes de réponse HTTP</li>
+                <li>Valider et sécuriser les données</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>ℹ️ Base URL</strong><br>
+                <span class="inline-code">https://api.votredomaine.com/v1</span>
+            </div>
+
+            <h3>⚙️ Technologies utilisées</h3>
+            <ul style="margin-left: 2rem; color: var(--secondary);">
+                <li><strong>Langage :</strong> PHP 8.3+</li>
+                <li><strong>Base de données :</strong> SQLite</li>
+                <li><strong>Format de données :</strong> JSON</li>
+                <li><strong>Tests :</strong> Postman / Insomnia</li>
+            </ul>
+        </div>
+
+        <!-- Authentification -->
+        <div class="section" id="authentication">
+            <h2>2. Authentification</h2>
+            <p>L'API utilise une authentification par token Bearer. Chaque requête doit inclure le header suivant :</p>
+
+            <code>Authorization: Bearer VOTRE_TOKEN_ICI</code>
+
+            <div class="warning-box">
+                <strong>⚠️ Important :</strong> Ne partagez jamais votre token d'authentification. Il doit rester confidentiel.
+            </div>
+
+            <h3>Obtenir un token</h3>
+            <p>Pour obtenir un token, envoyez une requête POST à l'endpoint d'authentification :</p>
+
+            <code>POST /auth/login
+Content-Type: application/json
+
+{
+  "email": "user@example.com",
+  "password": "votre_mot_de_passe"
+}</code>
+        </div>
+
+        <!-- Endpoints -->
+        <div class="section" id="endpoints">
+            <h2>3. Endpoints disponibles</h2>
+
+            <!-- GET all -->
+            <div class="endpoint">
+                <div class="endpoint-header">
+                    <span class="method-badge get">GET</span>
+                    <span class="endpoint-url">/citations</span>
+                </div>
+                <p><strong>Description :</strong> Récupère la liste complète de toutes les citations.</p>
+                
+                <h4>Paramètres de requête (optionnels)</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Paramètre</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>limit</td>
+                            <td>integer</td>
+                            <td>Nombre maximum de citations à retourner (défaut: 10)</td>
+                        </tr>
+                        <tr>
+                            <td>page</td>
+                            <td>integer</td>
+                            <td>Numéro de page pour la pagination (défaut: 1)</td>
+                        </tr>
+                        <tr>
+                            <td>author</td>
+                            <td>string</td>
+                            <td>Filtrer par auteur</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Exemple de requête</h4>
+                <code>GET /citations?limit=5&page=1
+Authorization: Bearer YOUR_TOKEN</code>
+
+                <h4>Réponse (200 OK)</h4>
+                <code>{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "text": "La vie est belle",
+      "author": "Victor Hugo",
+      "category": "Philosophie",
+      "created_at": "2025-09-15T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "text": "Être ou ne pas être",
+      "author": "William Shakespeare",
+      "category": "Théâtre",
+      "created_at": "2025-09-16T14:20:00Z"
+    }
+  ],
+  "pagination": {
+    "current_page": 1,
+    "total_pages": 5,
+    "total_items": 25
+  }
+}</code>
+            </div>
+
+            <!-- GET by ID -->
+            <div class="endpoint">
+                <div class="endpoint-header">
+                    <span class="method-badge get">GET</span>
+                    <span class="endpoint-url">/citations/{id}</span>
+                </div>
+                <p><strong>Description :</strong> Récupère une citation spécifique par son ID.</p>
+
+                <h4>Paramètres d'URL</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Paramètre</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>id</td>
+                            <td>integer</td>
+                            <td>L'identifiant unique de la citation</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Exemple de requête</h4>
+                <code>GET /citations/1
+Authorization: Bearer YOUR_TOKEN</code>
+
+                <h4>Réponse (200 OK)</h4>
+                <code>{
+  "success": true,
+  "data": {
+    "id": 1,
+    "text": "La vie est belle",
+    "author": "Victor Hugo",
+    "category": "Philosophie",
+    "created_at": "2025-09-15T10:30:00Z",
+    "updated_at": "2025-09-15T10:30:00Z"
+  }
+}</code>
+            </div>
+
+            <!-- POST -->
+            <div class="endpoint">
+                <div class="endpoint-header">
+                    <span class="method-badge post">POST</span>
+                    <span class="endpoint-url">/citations</span>
+                </div>
+                <p><strong>Description :</strong> Crée une nouvelle citation.</p>
+
+                <h4>Corps de la requête (JSON)</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Champ</th>
+                            <th>Type</th>
+                            <th>Requis</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>text</td>
+                            <td>string</td>
+                            <td>Oui</td>
+                            <td>Le texte de la citation (max 500 caractères)</td>
+                        </tr>
+                        <tr>
+                            <td>author</td>
+                            <td>string</td>
+                            <td>Oui</td>
+                            <td>L'auteur de la citation (max 100 caractères)</td>
+                        </tr>
+                        <tr>
+                            <td>category</td>
+                            <td>string</td>
+                            <td>Non</td>
+                            <td>Catégorie de la citation</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Exemple de requête</h4>
+                <code>POST /citations
+Content-Type: application/json
+Authorization: Bearer YOUR_TOKEN
+
+{
+  "text": "Le succès est la somme de petits efforts répétés jour après jour",
+  "author": "Robert Collier",
+  "category": "Motivation"
+}</code>
+
+                <h4>Réponse (201 Created)</h4>
+                <code>{
+  "success": true,
+  "message": "Citation créée avec succès",
+  "data": {
+    "id": 26,
+    "text": "Le succès est la somme de petits efforts répétés jour après jour",
+    "author": "Robert Collier",
+    "category": "Motivation",
+    "created_at": "2025-10-18T15:45:00Z"
+  }
+}</code>
+            </div>
+
+            <!-- PUT -->
+            <div class="endpoint">
+                <div class="endpoint-header">
+                    <span class="method-badge put">PUT</span>
+                    <span class="endpoint-url">/citations/{id}</span>
+                </div>
+                <p><strong>Description :</strong> Modifie une citation existante.</p>
+
+                <h4>Exemple de requête</h4>
+                <code>PUT /citations/26
+Content-Type: application/json
+Authorization: Bearer YOUR_TOKEN
+
+{
+  "text": "Le succès est la somme de petits efforts répétés",
+  "author": "Robert Collier",
+  "category": "Motivation"
+}</code>
+
+                <h4>Réponse (200 OK)</h4>
+                <code>{
+  "success": true,
+  "message": "Citation mise à jour avec succès",
+  "data": {
+    "id": 26,
+    "text": "Le succès est la somme de petits efforts répétés",
+    "author": "Robert Collier",
+    "category": "Motivation",
+    "updated_at": "2025-10-18T16:00:00Z"
+  }
+}</code>
+            </div>
+
+            <!-- DELETE -->
+            <div class="endpoint">
+                <div class="endpoint-header">
+                    <span class="method-badge delete">DELETE</span>
+                    <span class="endpoint-url">/citations/{id}</span>
+                </div>
+                <p><strong>Description :</strong> Supprime une citation.</p>
+
+                <h4>Exemple de requête</h4>
+                <code>DELETE /citations/26
+Authorization: Bearer YOUR_TOKEN</code>
+
+                <h4>Réponse (200 OK)</h4>
+                <code>{
+  "success": true,
+  "message": "Citation supprimée avec succès"
+}</code>
+            </div>
+        </div>
+
+        <!-- Gestion des erreurs -->
+        <div class="section" id="errors">
+            <h2>4. Gestion des erreurs</h2>
+            <p>L'API utilise des codes de statut HTTP standards pour indiquer le succès ou l'échec d'une requête.</p>
+
+            <h3>Codes de statut HTTP</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Signification</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>200</td>
+                        <td>OK</td>
+                        <td>La requête a réussi</td>
+                    </tr>
+                    <tr>
+                        <td>201</td>
+                        <td>Created</td>
+                        <td>La ressource a été créée avec succès</td>
+                    </tr>
+                    <tr>
+                        <td>400</td>
+                        <td>Bad Request</td>
+                        <td>Les données envoyées sont invalides</td>
+                    </tr>
+                    <tr>
+                        <td>401</td>
+                        <td>Unauthorized</td>
+                        <td>Token d'authentification manquant ou invalide</td>
+                    </tr>
+                    <tr>
+                        <td>404</td>
+                        <td>Not Found</td>
+                        <td>La ressource demandée n'existe pas</td>
+                    </tr>
+                    <tr>
+                        <td>500</td>
+                        <td>Internal Server Error</td>
+                        <td>Erreur serveur</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Format des erreurs</h3>
+            <p>Toutes les erreurs suivent le même format de réponse :</p>
+
+            <code>{
+  "success": false,
+  "error": {
+    "code": 400,
+    "message": "Validation failed",
+    "details": [
+      "Le champ 'text' est requis",
+      "Le champ 'author' ne doit pas dépasser 100 caractères"
+    ]
+  }
+}</code>
+        </div>
+
+        <!-- Exemples d'utilisation -->
+        <div class="section" id="examples">
+            <h2>5. Exemples d'utilisation</h2>
+
+            <h3>Avec cURL</h3>
+            <code># Récupérer toutes les citations
+curl -X GET "https://api.votredomaine.com/v1/citations" \
+  -H "Authorization: Bearer YOUR_TOKEN"
+
+# Créer une nouvelle citation
+curl -X POST "https://api.votredomaine.com/v1/citations" \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -d '{
+    "text": "La seule façon de faire du bon travail est d'\''aimer ce que vous faites",
+    "author": "Steve Jobs",
+    "category": "Travail"
+  }'</code>
+
+            <h3>Avec JavaScript (Fetch API)</h3>
+            <code>// Récupérer toutes les citations
+fetch('https://api.votredomaine.com/v1/citations', {
+  method: 'GET',
+  headers: {
+    'Authorization': 'Bearer YOUR_TOKEN'
+  }
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error('Erreur:', error));
+
+// Créer une nouvelle citation
+fetch('https://api.votredomaine.com/v1/citations', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer YOUR_TOKEN'
+  },
+  body: JSON.stringify({
+    text: 'La vie est un défi à relever',
+    author: 'Mère Teresa',
+    category: 'Inspiration'
+  })
+})
+.then(response => response.json())
+.then(data => console.log(data));</code>
+
+            <h3>Avec Python (requests)</h3>
+            <code>import requests
+
+# Configuration
+BASE_URL = "https://api.votredomaine.com/v1"
+TOKEN = "YOUR_TOKEN"
+headers = {"Authorization": f"Bearer {TOKEN}"}
+
+# Récupérer toutes les citations
+response = requests.get(f"{BASE_URL}/citations", headers=headers)
+citations = response.json()
+print(citations)
+
+# Créer une nouvelle citation
+new_citation = {
+    "text": "L'imagination est plus importante que le savoir",
+    "author": "Albert Einstein",
+    "category": "Science"
+}
+response = requests.post(
+    f"{BASE_URL}/citations",
+    headers={**headers, "Content-Type": "application/json"},
+    json=new_citation
+)
+print(response.json())</code>
+        </div>
+
+        <div class="section">
+            <h2>📞 Support</h2>
+            <p>Pour toute question ou problème concernant cette API, n'hésitez pas à me contacter :</p>
+            <ul style="margin-left: 2rem; margin-top: 1rem;">
+                <li>📧 Email : <a href="mailto:votre.email@example.com">votre.email@example.com</a></li>
+                <li>🐙 GitHub : <a href="https://github.com/votre-username" target="_blank">github.com/votre-username</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

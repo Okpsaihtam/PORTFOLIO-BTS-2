@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de [Votre Nom] - Étudiant BTS SIO SLAM spécialisé en développement web et API REST">
+    <title>Mathias Celle - Développeur Web Junior | BTS SIO SLAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Mathias Celle</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#watch">Veille</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-image">👨‍💻</div>
+            <h1>Mathias Celle</h1>
+            <p class="subtitle">Étudiant BTS SIO SLAM | Développeur Web Junior</p>
+            <p class="description">
+                Passionné par le développement web et les nouvelles technologies, je me spécialise en PHP/Laravel, API REST et design UX/UI. Actuellement en formation au Lycée La Salle Wasquehal, je recherche une alternance pour approfondir mes compétences en développement full-stack.
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/Okpsaihtam" target="_blank">🐙 GitHub</a>
+                <a href="https://www.linkedin.com/in/mathias-celle-3b4b28291/" target="_blank">💼 LinkedIn</a>
+                <a href="#" onclick="openContactModal(); return false;">📧 Email</a>
+            </div>
+            <a href="#projects" class="cta-button">Découvrir mes projets</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Compétences</h2>
+        <p class="section-subtitle">Technologies et outils que je maîtrise</p>
+        
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>💻 Langages de Programmation</h3>
+                <ul>
+                    <li>PHP 8.3+</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>HTML5 / CSS3</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>🛠️ Frameworks & Bibliothèques</h3>
+                <ul>
+                    <li>Laravel 10+</li>
+                    <li>Alpine.js</li>
+                    <li>Blade</li>
+                    <li>Tailwind CSS</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>🔧 Outils & Technologies</h3>
+                <ul>
+                    <li>Git / GitHub</li>
+                    <li>Composer</li>
+                    <li>SQLite / MySQL</li>
+                    <li>Postman / Insomnia</li>
+                    <li>Figma</li>
+                    <li>Docker (débutant)</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>📐 Méthodologies</h3>
+                <ul>
+                    <li>Architecture MVC</li>
+                    <li>REST API</li>
+                    <li>UX/UI Design</li>
+                    <li>Veille technologique</li>
+                    <li>Gestion de projet Agile</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="badges">
+            <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
+            <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
+            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+            <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+            <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+            <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+            <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind">
+            <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma">
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section" style="background: white;">
+        <h2 class="section-title">Projets</h2>
+        <p class="section-subtitle">Réalisations techniques et créatives</p>
+        
+        <div class="projects-grid">
+            <!-- Projet 1: API Citations -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>🔹 API Citations</h3>
+                    <div class="project-meta">
+                        <span>📅 Septembre 2025</span>
+                        <span>🏷️ API REST</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        Développement d'une API REST complète pour gérer des citations. L'API permet de créer, lire, modifier et supprimer des citations via des endpoints RESTful.
+                    </p>
+
+                    <div class="project-section">
+                        <h4>🎯 Objectifs</h4>
+                        <ul>
+                            <li>Comprendre l'architecture REST</li>
+                            <li>Implémenter un CRUD complet</li>
+                            <li>Gérer les codes de réponse HTTP</li>
+                            <li>Valider les données entrantes</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-tags">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">JSON</span>
+                        <span class="tech-tag">Postman</span>
+                    </div>
+
+                    <div class="project-section">
+                        <h4>✨ Fonctionnalités</h4>
+                        <ul>
+                            <li>GET /citations - Liste toutes les citations</li>
+                            <li>GET /citations/:id - Récupère une citation spécifique</li>
+                            <li>POST /citations - Crée une nouvelle citation</li>
+                            <li>PUT /citations/:id - Modifie une citation existante</li>
+                            <li>DELETE /citations/:id - Supprime une citation</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section">
+                        <h4>📚 Ce que j'ai appris</h4>
+                        <ul>
+                            <li>Conception d'architecture REST</li>
+                            <li>Gestion des erreurs HTTP (404, 400, 500)</li>
+                            <li>Validation et sécurisation des données</li>
+                            <li>Documentation d'API</li>
+                            <li>Tests avec Postman</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Okpsaihtam/mission-1-api-citations-template" class="project-link primary" target="_blank">
+                            <span>🐙</span> GitHub Repository
+                        </a>
+                        <a href="docs/api-citations.html" class="project-link secondary">
+                            <span>📄</span> Documentation
+                        </a>
+                        <a href="https://okpsaihtam.github.io/mission-1-api-citations-template/" class="project-link demo" target="_blank">
+                            <span>🚀</span> Voir le rendu
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 2: Figma TechSolutions -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>🔹 Atelier Figma TechSolutions</h3>
+                    <div class="project-meta">
+                        <span>📅 Septembre 2025</span>
+                        <span>🏷️ Design UX/UI</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        Conception d'un outil de gestion de tickets IT pour l'entreprise fictive TechSolutions. Projet complet suivant une méthodologie UX professionnelle, de l'analyse des besoins utilisateurs jusqu'au prototype interactif.
+                    </p>
+
+                    <div class="project-section">
+                        <h4>🎨 Méthodologie UX appliquée</h4>
+                        <ul>
+                            <li>Analyse des interviews utilisateurs</li>
+                            <li>Création de cas d'utilisation (user stories)</li>
+                            <li>Conception de wireframes (maquettes fil de fer)</li>
+                            <li>Design UI (interface utilisateur finale)</li>
+                            <li>Prototypage interactif avec transitions</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-tags">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">UX Design</span>
+                        <span class="tech-tag">Prototypage</span>
+                        <span class="tech-tag">Design System</span>
+                    </div>
+
+                    <div class="project-section">
+                        <h4>✨ Fonctionnalités conçues</h4>
+                        <ul>
+                            <li>Dashboard de visualisation des tickets</li>
+                            <li>Formulaire de création de ticket</li>
+                            <li>Système de priorisation</li>
+                            <li>Workflow de traitement des demandes</li>
+                            <li>Interface responsive (mobile + desktop)</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section">
+                        <h4>📚 Ce que j'ai appris</h4>
+                        <ul>
+                            <li>Méthodologie UX complète</li>
+                            <li>Outils de prototypage professionnel (Figma)</li>
+                            <li>Analyse des besoins utilisateurs</li>
+                            <li>Création de design systems</li>
+                            <li>Importance du feedback utilisateur</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/BTS2-SIO-SLAM-LSW/atelier-analyse-ux-figma-techsolutions-Okpsaihtam" class="project-link primary" target="_blank">
+                            <span>🐙</span> GitHub Repository
+                        </a>
+                        <a href="docs/figma-techsolutions.html" class="project-link secondary">
+                            <span>📄</span> Documentation
+                        </a>
+                        <a href="https://www.figma.com/make/xbOUtLsz7EuYKLYNQKqqbJ/User-Personas-for-TechSolutions?node-id=0-1&p=f&t=7kuu4gT45lNZaaMY-0&fullscreen=1" class="project-link demo" target="_blank">
+                            <span>🎨</span> Prototype Figma
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">Formations et compétences validées</p>
+        
+        <div class="cert-grid">
+            <div class="cert-card">
+                <div class="cert-icon">🎓</div>
+                <h3>GitHub Foundations (GH-900)</h3>
+                <p class="cert-meta">Octobre 2025 • GitHub</p>
+                <ul>
+                    <li>Fondamentaux de Git et GitHub</li>
+                    <li>Gestion de repositories</li>
+                    <li>Branches et pull requests</li>
+                    <li>Collaboration en équipe</li>
+                    <li>GitHub Pages</li>
+                    <li>GitHub Actions (introduction)</li>
+                </ul>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-icon">🎓</div>
+                <h3>BTS SIO SLAM</h3>
+                <p class="cert-meta">2024-2026 • Lycée La Salle Wasquehal</p>
+                <ul>
+                    <li>Développement d'applications web</li>
+                    <li>Gestion de bases de données</li>
+                    <li>Méthodologies Agile</li>
+                    <li>Veille technologique</li>
+                    <li>Travail en équipe</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Watch Section -->
+    <section id="watch" class="section" style="background: white;">
+        <h2 class="section-title">Veille Technologique</h2>
+        <p class="section-subtitle">Rester à jour sur les tendances tech</p>
+        
+        <div class="watch-intro">
+            <h3>Ma méthodologie de veille</h3>
+            <p>Je maintiens une veille technologique active sur les sujets suivants :</p>
+            <ul style="margin: 1rem 0; color: var(--secondary);">
+                <li>Intelligence Artificielle et ses applications</li>
+                <li>Frameworks web modernes (Laravel, React, Vue.js)</li>
+                <li>Pratiques de développement (DevOps, CI/CD)</li>
+                <li>Sécurité informatique</li>
+                <li>Tendances UX/UI</li>
+            </ul>
+            <div class="watch-sources">
+                <span class="watch-source">📱 Medium</span>
+                <span class="watch-source">💻 Dev.to</span>
+                <span class="watch-source">📧 Newsletters IA</span>
+                <span class="watch-source">🎥 YouTube Tech</span>
+                <span class="watch-source">🐙 GitHub Trending</span>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; margin-bottom: 2rem; color: var(--primary);">Synthèses de veille réalisées</h3>
+        <div class="articles-grid">
+            <div class="article-card">
+                <h3>📡 IA Weekly - Septembre 2025</h3>
+                <p>Analyse approfondie des annonces majeures de NVIDIA, Amazon et OpenAI. Étude de l'impact de ces innovations sur les métiers du développement et les nouvelles opportunités professionnelles.</p>
+                <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                    <button onclick="openModal('synthese1')" class="article-link" style="cursor: pointer; border: none; background: none; padding: 0; font-family: inherit;">
+                        Lire la synthèse →
+                    </button>
+                    <button onclick="openModal('affiche1')" class="btn-affiche" style="border: none; cursor: pointer;">
+                        <span>🖼️</span> Voir l'affiche
+                    </button>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <h3>🇫🇷 Souveraineté numérique française</h3>
+                <p>Exploration des enjeux stratégiques du secteur numérique en France, analyse des initiatives gouvernementales et des perspectives pour l'écosystème tech national.</p>
+                <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                    <button onclick="openModal('synthese2')" class="article-link" style="cursor: pointer; border: none; background: none; padding: 0; font-family: inherit;">
+                        Lire l'analyse →
+                    </button>
+                    <button onclick="openModal('affiche2')" class="btn-affiche" style="border: none; cursor: pointer;">
+                        <span>🖼️</span> Voir l'affiche
+                    </button>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <h3>🤖 IA en 2026 : Prospective</h3>
+                <p>Vision prospective sur l'évolution de l'IA basée sur des analyses d'experts. Implications professionnelles et création d'une affiche interactive avec QR code.</p>
+                <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                    <button onclick="openModal('synthese3')" class="article-link" style="cursor: pointer; border: none; background: none; padding: 0; font-family: inherit;">
+                        Découvrir la prospective →
+                    </button>
+                    <button onclick="openModal('affiche3')" class="btn-affiche" style="border: none; cursor: pointer;">
+                        <span>🖼️</span> Voir l'affiche
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal pour afficher les synthèses et affiches -->
+        <div id="modalOverlay" class="modal-overlay" onclick="closeModal()">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <button class="modal-close" onclick="closeModal()">✕</button>
+                <div id="modalBody"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2 class="section-title">Expérience</h2>
+        <p class="section-subtitle">Parcours professionnel</p>
+        
+        <div class="experience-card">
+            <div class="experience-header">
+                <h3>Stage/Alternance BTS SIO</h3>
+                <p class="experience-meta">Openscop • 26/05/2025 - 28/06/2025 • Développeur web / Technicien informatique</p>
+            </div>
+            <div class="experience-content">
+                <h4>Missions réalisées</h4>
+                <ul>
+                    <li>Développement de fonctionnalités web avec PHP/Laravel</li>
+                    <li>Maintenance et optimisation de bases de données MySQL</li>
+                    <li>Participation aux réunions Agile et sprints de développement</li>
+                    <li>Support technique aux utilisateurs internes</li>
+                </ul>
+
+                <h4>Technologies utilisées</h4>
+                <div class="tech-tags" style="margin-top: 1rem;">
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">Laravel</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+
+                <h4>Compétences développées</h4>
+                <ul>
+                    <li>Travail en équipe sur des projets réels</li>
+                    <li>Gestion de versions avec Git en environnement professionnel</li>
+                    <li>Communication avec les clients et les utilisateurs</li>
+                    <li>Résolution de problèmes techniques complexes</li>
+                </ul>
+
+                <h4>Réalisations</h4>
+                <ul>
+                    <li>Développement d'un module de gestion utilisateurs réduisant le temps de traitement de 40%</li>
+                    <li>Optimisation des requêtes SQL améliorant les performances de 30%</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" style="background: white;">
+        <div class="contact-section">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">Restons en contact</p>
+            
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <div class="contact-icon">💼</div>
+                    <strong>LinkedIn</strong>
+                    <a href="https://www.linkedin.com/in/mathias-celle-3b4b28291/" target="_blank">Voir mon profil</a>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-icon">🐙</div>
+                    <strong>GitHub</strong>
+                    <a href="https://github.com/Okpsaihtam?tab=repositories" target="_blank">Mes repositories</a>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-icon">📧</div>
+                    <strong>Email</strong>
+                    <a href="#" onclick="openContactModal(); return false;">M'envoyer un email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Formulaire de Contact -->
+    <div id="contactModalOverlay" class="modal-overlay" onclick="closeContactModal()">
+        <div class="modal-content contact-modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeContactModal()">✕</button>
+            <div class="modal-body-contact">
+                <h2>📧 Me contacter</h2>
+                <p style="color: var(--secondary); margin-bottom: 2rem;">Remplissez le formulaire ci-dessous et je vous répondrai dans les plus brefs délais.</p>
+                
+                <form id="contactForm" onsubmit="sendEmail(event)">
+                    <div class="form-group">
+                        <label for="contactName">Votre nom *</label>
+                        <input type="text" id="contactName" name="name" required placeholder="Ex: Jean Dupont">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactEmail">Votre email *</label>
+                        <input type="email" id="contactEmail" name="email" required placeholder="Ex: jean.dupont@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactSubject">Sujet *</label>
+                        <input type="text" id="contactSubject" name="subject" required placeholder="Ex: Opportunité d'alternance">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactMessage">Message *</label>
+                        <textarea id="contactMessage" name="message" required placeholder="Votre message..."></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">
+                            <span>📤</span> Envoyer le message
+                        </button>
+                        <button type="button" class="btn-cancel" onclick="closeContactModal()">
+                            Annuler
+                        </button>
+                    </div>
+                </form>
+
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Mathias Celle - Portfolio BTS SIO SLAM</p>
+        <p style="margin-top: 0.5rem; opacity: 0.7;">Fait avec ❤️ et hébergé sur GitHub Pages</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop">↑</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
