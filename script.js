@@ -66,7 +66,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const target = document.querySelector(this.getAttribute('href'));
         
         if (target) {
-            const offsetTop = target.offsetTop - 70;
+            const offsetTop = target.offsetTop - 80;
             window.scrollTo({
                 top: offsetTop,
                 behavior: 'smooth'
@@ -92,7 +92,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-const animatedElements = document.querySelectorAll('.skill-category, .project-card, .cert-card, .article-card, .experience-card');
+const animatedElements = document.querySelectorAll('.skill-card, .project-card-modern, .cert-card-modern, .article-card-modern, .experience-card-modern');
 animatedElements.forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
@@ -138,7 +138,7 @@ externalLinks.forEach(link => {
 // ===================================
 // Message de bienvenue dans la console
 // ===================================
-console.log('%c👋 Bienvenue sur mon portfolio !', 'font-size: 20px; color: #2563eb; font-weight: bold;');
+console.log('%c👋 Bienvenue sur mon portfolio !', 'font-size: 20px; color: #6366f1; font-weight: bold;');
 console.log('%cVous êtes curieux ? C\'est une qualité de développeur ! 😊', 'font-size: 14px; color: #64748b;');
 
 // ===================================
@@ -171,30 +171,19 @@ document.addEventListener('DOMContentLoaded', () => {
 // ===================================
 // SYSTÈME DE MODAL POUR VEILLE TECHNOLOGIQUE
 // ===================================
-
-// ⚠️ IMPORTANT : Remplacez les liens ci-dessous par VOS VRAIS LIENS GOOGLE DRIVE
-// Pour obtenir le lien de prévisualisation :
-// 1. Partagez votre fichier sur Google Drive (accès : Tous les utilisateurs disposant du lien)
-// 2. Copiez le lien (format : https://drive.google.com/file/d/VOTRE_ID/view?usp=sharing)
-// 3. Extrayez l'ID du fichier (la partie après /d/ et avant /view)
-// 4. Utilisez ce format : https://drive.google.com/file/d/VOTRE_ID/preview
-
 const affichesGoogleDrive = {
     affiche1: {
         title: "📡 Affiche - IA Weekly Septembre 2025",
-        // 👇 REMPLACEZ "VOTRE_ID_GOOGLE_DRIVE_1" par l'ID réel de votre fichier
         driveUrl: "https://drive.google.com/file/d/1KAtZXTlFXIDDbmXQZi59YgSJn1OQy0Rl/preview",
         downloadUrl: "https://drive.google.com/file/d/1KAtZXTlFXIDDbmXQZi59YgSJn1OQy0Rl/view?usp=sharing"
     },
     affiche2: {
         title: "🇫🇷 Affiche - Souveraineté numérique française",
-        // 👇 REMPLACEZ "VOTRE_ID_GOOGLE_DRIVE_2" par l'ID réel de votre fichier
         driveUrl: "https://drive.google.com/file/d/1gSsspDwbKsOdnyUdj81mV9YcYmLZOhiy/preview",
         downloadUrl: "https://drive.google.com/file/d/1gSsspDwbKsOdnyUdj81mV9YcYmLZOhiy/view?usp=sharing"
     },
     affiche3: {
         title: "🤖 Affiche - IA en 2026 Prospective",
-        // 👇 REMPLACEZ "VOTRE_ID_GOOGLE_DRIVE_3" par l'ID réel de votre fichier
         driveUrl: "https://drive.google.com/file/d/1m3fQSF-ge7nOZCqTKh3IlZI0obUpyqHG/preview",
         downloadUrl: "https://drive.google.com/file/d/1m3fQSF-ge7nOZCqTKh3IlZI0obUpyqHG/view?usp=sharing"
     }
@@ -538,15 +527,12 @@ document.addEventListener('keydown', (e) => {
 });
 
 // Message console pour les modals
-console.log('%c📚 Système de modal avec Google Drive chargé !', 'color: #667eea; font-weight: bold;');
-console.log('%cN\'oubliez pas de remplacer les IDs Google Drive !', 'color: #f59e0b; font-weight: bold;');
+console.log('%c📚 Système de modal avec Google Drive chargé !', 'color: #6366f1; font-weight: bold;');
 
 // ===================================
 // SYSTÈME DE FORMULAIRE DE CONTACT
 // ===================================
-
-// ⚠️ IMPORTANT : Remplacez par votre vraie adresse email
-const YOUR_EMAIL = "mathias.celle42230@gmail.com"; // 👈 MODIFIEZ ICI
+const YOUR_EMAIL = "mathias.celle42230@gmail.com";
 
 // Fonction pour ouvrir le modal de contact
 function openContactModal() {
@@ -621,4 +607,3 @@ document.addEventListener('keydown', (e) => {
 });
 
 console.log('%c📧 Système de formulaire de contact chargé !', 'color: #10b981; font-weight: bold;');
-console.log('%cN\'oubliez pas de remplacer YOUR_EMAIL dans script.js', 'color: #f59e0b; font-weight: bold;');
