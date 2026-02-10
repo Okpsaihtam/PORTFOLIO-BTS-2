@@ -337,6 +337,7 @@ nav.scrolled {
 
 .typing-effect {
     /* Pas de bordure ni de padding - modification appliquée */
+    display: block;
 }
 
 .hero-description {
