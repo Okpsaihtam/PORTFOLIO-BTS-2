@@ -120,12 +120,6 @@ nav.scrolled {
     color: var(--text-primary);
     display: flex;
     align-items: center;
-    gap: 0.25rem;
-}
-
-.logo-bracket {
-    color: var(--primary);
-    font-weight: 700;
 }
 
 .nav-links {
@@ -342,22 +336,7 @@ nav.scrolled {
 }
 
 .typing-effect {
-    border-right: 3px solid var(--primary);
-    padding-right: 0.5rem;
-    animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-    50% { border-color: transparent; }
-}
-
-.cursor {
-    display: inline-block;
-    width: 2px;
-    height: 1.5rem;
-    background: var(--primary);
-    margin-left: 0.25rem;
-    animation: blink 1s step-end infinite;
+    /* Pas de bordure ni de padding - modification appliquée */
 }
 
 .hero-description {
@@ -1486,6 +1465,94 @@ nav.scrolled {
     color: #991b1b;
     border: 2px solid #ef4444;
     display: block;
+}
+
+/* Styles pour les modaux de synthèses - ajoutez ces styles si nécessaire */
+.modal-body-synthese {
+    padding: 3rem;
+}
+
+.modal-body-synthese h2 {
+    color: var(--text-primary);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.synthese-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--bg-tertiary);
+}
+
+.synthese-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.synthese-meta-item strong {
+    color: var(--primary);
+    font-size: 0.875rem;
+}
+
+.synthese-meta-item span {
+    color: var(--text-secondary);
+}
+
+.modal-body-synthese h3 {
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.modal-body-synthese h4 {
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.modal-body-synthese p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.modal-body-synthese ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.modal-body-synthese li {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
+.modal-body-affiche {
+    padding: 3rem;
+}
+
+.modal-body-affiche h2 {
+    color: var(--text-primary);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 70vh;
+    border: none;
+    border-radius: var(--radius);
+    margin-bottom: 2rem;
+}
+
+.affiche-download {
+    text-align: center;
 }
 
 /* ===================================
