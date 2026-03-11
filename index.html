@@ -717,7 +717,10 @@
                 <h2>📧 Me contacter</h2>
                 <p style="color: var(--text-secondary); margin-bottom: 2rem;">Remplissez le formulaire ci-dessous et je vous répondrai dans les plus brefs délais.</p>
                 
-                <form id="contactForm" onsubmit="sendEmail(event)">
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Access Key Web3Forms -->
+                    <input type="hidden" name="access_key" value="66c2a7c2-d1c9-45f8-a883-2da5bed5a493">
+                    
                     <div class="form-group">
                         <label for="contactName">Votre nom *</label>
                         <input type="text" id="contactName" name="name" required placeholder="Ex: Jean Dupont">
@@ -760,14 +763,10 @@
             <div class="footer-links">
                 <a href="https://github.com/Okpsaihtam" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/mathias-celle-3b4b28291/" target="_blank">LinkedIn</a>
-                <a href="mailto:mathias.celle42230@gmail.com">Email</a>
+                <a href="/cdn-cgi/l/email-protection#701d1104181911035e13151c1c15444242434030171d11191c5e131f1d">Email</a>
             </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
     <a href="#home" class="back-to-top" id="backToTop">↑</a>
-
-    <script src="script.js"></script>
-</body>
-</html>
