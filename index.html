@@ -3,704 +3,606 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Mathias Celle - Étudiant spécialisé en développement full-stack et développement IA">
+    <meta name="description" content="Portfolio de Mathias Celle - Développeur Full-Stack & IA">
     <title>Mathias Celle - Développeur Web Junior</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Satoshi:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                Mathias Celle
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#watch">Veille</a></li>
-                <li><a href="#experience">Expérience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="mobile-menu" id="mobileMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <!-- SIDEBAR NAVIGATION -->
+    <div class="sidebar">
+        <div class="logo-sidebar">MC</div>
+        <nav class="nav-sidebar">
+            <a href="#home" class="nav-item active">🏠</a>
+            <a href="#skills" class="nav-item">⚡</a>
+            <a href="#projects" class="nav-item">💼</a>
+            <a href="#certifications" class="nav-item">🎓</a>
+            <a href="#watch" class="nav-item">📡</a>
+            <a href="#experience" class="nav-item">💻</a>
+            <a href="#contact" class="nav-item">📧</a>
+        </nav>
+        <div class="social-sidebar">
+            <a href="https://github.com/Okpsaihtam" target="_blank" class="social-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/mathias-celle-3b4b28291/" target="_blank" class="social-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
         </div>
-    </nav>
+    </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-badge">👨‍💻 Disponible pour une alternance</div>
-            <h1 class="hero-title">
-                <span class="hero-greeting">Bonjour, je suis</span>
-                <span class="hero-name">Mathias Celle</span>
-            </h1>
-            <p class="hero-subtitle">
-                Développeur Web Junior
-            </p>
-            <p class="hero-description">
-                Passionné par le développement web et les nouvelles technologies, je me spécialise en 
-                <strong>développement full-stack</strong> et <strong>développement IA</strong>. 
-                Actuellement en formation de développeur IA à l'école EPSI.
-            </p>
-            <div class="hero-cta">
-                <a href="#projects" class="btn-primary">
-                    <span>Découvrir mes projets</span>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </a>
-                <a href="#contact" class="btn-secondary" onclick="openContactModal(); return false;">
-                    <span>Me contacter</span>
-                </a>
-            </div>
-            <div class="social-links">
-                <a href="https://github.com/Okpsaihtam" target="_blank" class="social-link">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/mathias-celle-3b4b28291/" target="_blank" class="social-link">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
-                </a>
-                <a href="#contact" onclick="openContactModal(); return false;" class="social-link">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                        <polyline points="22,6 12,13 2,6"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>↓</span>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section section-skills">
-        <div class="section-header">
-            <span class="section-number">01.</span>
-            <h2 class="section-title">Compétences</h2>
-        </div>
-        <p class="section-subtitle">Technologies et outils que je maîtrise</p>
-        
-        <div class="skills-grid">
-            <div class="skill-card">
-                <div class="skill-icon">💻</div>
-                <h3>Langages</h3>
-                <div class="skill-list">
-                    <span class="skill-tag">PHP 8.3+</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">HTML5</span>
-                    <span class="skill-tag">CSS3</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">🛠️</div>
-                <h3>Frameworks</h3>
-                <div class="skill-list">
-                    <span class="skill-tag">Laravel 10+</span>
-                    <span class="skill-tag">Alpine.js</span>
-                    <span class="skill-tag">Blade</span>
-                    <span class="skill-tag">Tailwind CSS</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">🔧</div>
-                <h3>Outils</h3>
-                <div class="skill-list">
-                    <span class="skill-tag">Git / GitHub</span>
-                    <span class="skill-tag">Composer</span>
-                    <span class="skill-tag">MySQL</span>
-                    <span class="skill-tag">Postman</span>
-                    <span class="skill-tag">Figma</span>
-                    <span class="skill-tag">Docker</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">📐</div>
-                <h3>Méthodologies</h3>
-                <div class="skill-list">
-                    <span class="skill-tag">Architecture MVC</span>
-                    <span class="skill-tag">REST API</span>
-                    <span class="skill-tag">UX/UI Design</span>
-                    <span class="skill-tag">Agile</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="tech-badges">
-            <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
-            <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
-            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-            <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-            <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
-            <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
-            <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind">
-            <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma">
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section section-projects">
-        <div class="section-header">
-            <span class="section-number">02.</span>
-            <h2 class="section-title">Projets</h2>
-        </div>
-        <p class="section-subtitle">Découvrez mes réalisations techniques</p>
-        
-        <div class="projects-container">
-            <!-- Projet 1: API Citations -->
-            <article class="project-card-modern">
-                <div class="project-visual">
-                    <div class="project-image">
-                        <svg class="project-thumbnail" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Background -->
-                            <rect width="800" height="600" fill="#6366f1"/>
-                            <rect width="800" height="600" fill="url(#grad1)" opacity="0.3"/>
-                            
-                            <!-- Grid pattern -->
-                            <defs>
-                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
-                                </linearGradient>
-                                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-                                </pattern>
-                            </defs>
-                            <rect width="800" height="600" fill="url(#grid)"/>
-                            
-                            <!-- Code window -->
-                            <rect x="100" y="80" width="600" height="350" rx="15" fill="white" opacity="0.95"/>
-                            
-                            <!-- Window header -->
-                            <rect x="100" y="80" width="600" height="40" rx="15" fill="#1e293b"/>
-                            <circle cx="125" cy="100" r="6" fill="#ef4444"/>
-                            <circle cx="145" cy="100" r="6" fill="#f59e0b"/>
-                            <circle cx="165" cy="100" r="6" fill="#10b981"/>
-                            
-                            <!-- Code lines -->
-                            <rect x="130" y="150" width="200" height="15" rx="3" fill="#6366f1" opacity="0.3"/>
-                            <rect x="350" y="150" width="150" height="15" rx="3" fill="#8b5cf6" opacity="0.3"/>
-                            
-                            <rect x="130" y="180" width="150" height="15" rx="3" fill="#10b981" opacity="0.3"/>
-                            <rect x="300" y="180" width="180" height="15" rx="3" fill="#6366f1" opacity="0.3"/>
-                            
-                            <rect x="130" y="210" width="180" height="15" rx="3" fill="#8b5cf6" opacity="0.3"/>
-                            <rect x="330" y="210" width="140" height="15" rx="3" fill="#10b981" opacity="0.3"/>
-                            
-                            <rect x="130" y="240" width="250" height="15" rx="3" fill="#6366f1" opacity="0.3"/>
-                            
-                            <rect x="130" y="290" width="160" height="15" rx="3" fill="#10b981" opacity="0.3"/>
-                            <rect x="310" y="290" width="200" height="15" rx="3" fill="#8b5cf6" opacity="0.3"/>
-                            
-                            <rect x="130" y="320" width="190" height="15" rx="3" fill="#6366f1" opacity="0.3"/>
-                            <rect x="340" y="320" width="150" height="15" rx="3" fill="#10b981" opacity="0.3"/>
-                            
-                            <rect x="130" y="370" width="220" height="15" rx="3" fill="#8b5cf6" opacity="0.3"/>
-                            <rect x="370" y="370" width="170" height="15" rx="3" fill="#6366f1" opacity="0.3"/>
-                            
-                            <!-- API Icon -->
-                            <circle cx="570" cy="360" r="50" fill="#6366f1" opacity="0.2"/>
-                            <text x="570" y="375" text-anchor="middle" font-size="40" fill="white" font-weight="bold">{ }</text>
-                            
-                            <!-- Title - Plus visible et plus bas -->
-                            <text x="400" y="500" text-anchor="middle" font-size="60" fill="white" font-weight="bold" font-family="Arial">API REST</text>
-                            <text x="400" y="555" text-anchor="middle" font-size="36" fill="white" opacity="0.95" font-family="Arial">Citations CRUD</text>
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="hero-label">👋 Bonjour, je suis</p>
+                <h1 class="hero-title">
+                    <span class="name">Mathias Celle</span>
+                </h1>
+                <p class="hero-subtitle">Développeur Web Junior</p>
+                <p class="hero-description">
+                    Passionné par le développement web et les nouvelles technologies, je me spécialise en 
+                    <strong>développement full-stack</strong> et <strong>développement IA</strong>. 
+                    Actuellement en formation de développeur IA à l'école EPSI.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-primary">
+                        Découvrir mes projets
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                    </div>
-                    <div class="project-tech-stack">
-                        <span class="tech-pill">PHP</span>
-                        <span class="tech-pill">REST API</span>
-                        <span class="tech-pill">SQLite</span>
+                    </a>
+                    <a href="#contact" class="btn-secondary" onclick="openContactModal(); return false;">
+                        Me contacter
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <p class="section-number">01.</p>
+                <h2 class="section-title">Compétences</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Langages</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">PHP 8.3+</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
                     </div>
                 </div>
-                
-                <div class="project-content-modern">
-                    <div class="project-header-modern">
-                        <span class="project-category">API • Backend</span>
-                        <h3>API Citations</h3>
-                        <p class="project-date">Septembre 2025</p>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🛠️</div>
+                    <h3>Frameworks</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Laravel 10+</span>
+                        <span class="skill-tag">Alpine.js</span>
+                        <span class="skill-tag">Blade</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🔧</div>
+                    <h3>Outils</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Git / GitHub</span>
+                        <span class="skill-tag">Composer</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Docker</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">📐</div>
+                    <h3>Méthodologies</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Architecture MVC</span>
+                        <span class="skill-tag">REST API</span>
+                        <span class="skill-tag">UX/UI Design</span>
+                        <span class="skill-tag">Agile</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <p class="section-number">02.</p>
+                <h2 class="section-title">Projets</h2>
+            </div>
+            
+            <div class="projects-container">
+                <!-- Projet 1: API Citations -->
+                <article class="project-card-modern">
+                    <div class="project-visual">
+                        <div class="project-image">
+                            <svg class="project-thumbnail" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="800" height="600" fill="#64ffda"/>
+                                <rect width="800" height="600" fill="url(#grad1)" opacity="0.3"/>
+                                <defs>
+                                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#52e4c2;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#64ffda;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <rect x="100" y="80" width="600" height="350" rx="15" fill="white" opacity="0.95"/>
+                                <rect x="100" y="80" width="600" height="40" rx="15" fill="#0a192f"/>
+                                <circle cx="125" cy="100" r="6" fill="#ef4444"/>
+                                <circle cx="145" cy="100" r="6" fill="#f59e0b"/>
+                                <circle cx="165" cy="100" r="6" fill="#10b981"/>
+                                <rect x="130" y="150" width="200" height="15" rx="3" fill="#64ffda" opacity="0.3"/>
+                                <rect x="350" y="150" width="150" height="15" rx="3" fill="#0a192f" opacity="0.3"/>
+                                <rect x="130" y="180" width="150" height="15" rx="3" fill="#10b981" opacity="0.3"/>
+                                <rect x="300" y="180" width="180" height="15" rx="3" fill="#64ffda" opacity="0.3"/>
+                                <rect x="130" y="210" width="180" height="15" rx="3" fill="#0a192f" opacity="0.3"/>
+                                <rect x="330" y="210" width="140" height="15" rx="3" fill="#10b981" opacity="0.3"/>
+                                <rect x="130" y="240" width="250" height="15" rx="3" fill="#64ffda" opacity="0.3"/>
+                                <rect x="130" y="290" width="160" height="15" rx="3" fill="#10b981" opacity="0.3"/>
+                                <rect x="310" y="290" width="200" height="15" rx="3" fill="#0a192f" opacity="0.3"/>
+                                <rect x="130" y="320" width="190" height="15" rx="3" fill="#64ffda" opacity="0.3"/>
+                                <rect x="340" y="320" width="150" height="15" rx="3" fill="#10b981" opacity="0.3"/>
+                                <rect x="130" y="370" width="220" height="15" rx="3" fill="#0a192f" opacity="0.3"/>
+                                <circle cx="570" cy="360" r="50" fill="#64ffda" opacity="0.2"/>
+                                <text x="570" y="375" text-anchor="middle" font-size="40" fill="#0a192f" font-weight="bold">{ }</text>
+                                <text x="400" y="500" text-anchor="middle" font-size="60" fill="#0a192f" font-weight="bold">API REST</text>
+                                <text x="400" y="555" text-anchor="middle" font-size="36" fill="#0a192f" opacity="0.95" font-family="Arial">Citations CRUD</text>
+                            </svg>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span class="tech-pill">PHP</span>
+                            <span class="tech-pill">REST API</span>
+                            <span class="tech-pill">SQLite</span>
+                        </div>
                     </div>
                     
-                    <p class="project-description-modern">
-                        API REST complète pour gérer des citations avec toutes les opérations CRUD. 
-                        Implémentation professionnelle suivant les meilleures pratiques RESTful avec 
-                        validation des données et gestion d'erreurs robuste.
-                    </p>
-
-                    <div class="project-highlights">
-                        <div class="highlight-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            <span>5 endpoints RESTful</span>
-                        </div>
-                        <div class="highlight-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            <span>Validation avancée</span>
-                        </div>
-                        <div class="highlight-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            <span>Documentation complète</span>
-                        </div>
-                    </div>
-
-                    <div class="project-actions">
-                        <a href="https://okpsaihtam.github.io/mission-1-api-citations-template/" class="btn-project btn-demo" target="_blank">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <polygon points="10 8 16 12 10 16 10 8"/>
-                            </svg>
-                            Démo Live
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Projet 2: Figma TechSolutions -->
-            <article class="project-card-modern">
-                <div class="project-visual">
-                    <div class="project-image project-image-figma">
-                        <svg class="project-thumbnail" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Background -->
-                            <rect width="800" height="600" fill="#ec4899"/>
-                            <rect width="800" height="600" fill="url(#grad2)" opacity="0.3"/>
-                            
-                            <defs>
-                                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#f43f5e;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            
-                            <!-- Figma-style frames -->
-                            <rect x="80" y="80" width="280" height="200" rx="10" fill="white" opacity="0.9"/>
-                            <rect x="80" y="80" width="280" height="30" rx="10" fill="#f43f5e"/>
-                            <rect x="100" y="130" width="100" height="12" rx="3" fill="#ec4899" opacity="0.4"/>
-                            <rect x="100" y="155" width="180" height="12" rx="3" fill="#f43f5e" opacity="0.4"/>
-                            <rect x="100" y="180" width="140" height="12" rx="3" fill="#ec4899" opacity="0.4"/>
-                            <rect x="100" y="220" width="60" height="35" rx="5" fill="#ec4899" opacity="0.6"/>
-                            <rect x="170" y="220" width="60" height="35" rx="5" fill="#f43f5e" opacity="0.6"/>
-                            
-                            <rect x="440" y="80" width="280" height="200" rx="10" fill="white" opacity="0.9"/>
-                            <rect x="440" y="80" width="280" height="30" rx="10" fill="#f43f5e"/>
-                            <circle cx="540" cy="170" r="35" fill="#ec4899" opacity="0.4"/>
-                            <rect x="590" y="145" width="100" height="12" rx="3" fill="#f43f5e" opacity="0.4"/>
-                            <rect x="590" y="170" width="80" height="12" rx="3" fill="#ec4899" opacity="0.4"/>
-                            <rect x="460" y="220" width="80" height="35" rx="5" fill="#ec4899" opacity="0.6"/>
-                            <rect x="550" y="220" width="80" height="35" rx="5" fill="#f43f5e" opacity="0.6"/>
-                            
-                            <rect x="260" y="320" width="280" height="200" rx="10" fill="white" opacity="0.9"/>
-                            <rect x="260" y="320" width="280" height="30" rx="10" fill="#f43f5e"/>
-                            <rect x="280" y="370" width="120" height="12" rx="3" fill="#ec4899" opacity="0.4"/>
-                            <rect x="280" y="395" width="200" height="12" rx="3" fill="#f43f5e" opacity="0.4"/>
-                            <rect x="280" y="420" width="160" height="12" rx="3" fill="#ec4899" opacity="0.4"/>
-                            <rect x="280" y="460" width="70" height="35" rx="5" fill="#ec4899" opacity="0.6"/>
-                            <rect x="360" y="460" width="70" height="35" rx="5" fill="#f43f5e" opacity="0.6"/>
-                            
-                            <!-- Figma logo style -->
-                            <circle cx="120" cy="450" r="8" fill="white"/>
-                            <circle cx="120" cy="470" r="8" fill="white"/>
-                            <circle cx="135" cy="460" r="8" fill="white"/>
-                            
-                            <!-- Title -->
-                            <text x="400" y="80" text-anchor="middle" font-size="52" fill="white" font-weight="bold" font-family="Arial">UX/UI DESIGN</text>
-                            <text x="400" y="30" text-anchor="middle" font-size="32" fill="white" opacity="0.9" font-family="Arial">TechSolutions</text>
-                        </svg>
-                    </div>
-                    <div class="project-tech-stack">
-                        <span class="tech-pill">Figma</span>
-                        <span class="tech-pill">UX Design</span>
-                        <span class="tech-pill">Prototyping</span>
-                    </div>
-                </div>
-                
-                <div class="project-content-modern">
-                    <div class="project-header-modern">
-                        <span class="project-category">UX/UI • Design</span>
-                        <h3>TechSolutions Design</h3>
-                        <p class="project-date">Septembre 2025</p>
-                    </div>
-                    
-                    <p class="project-description-modern">
-                        Conception complète d'un système de gestion de tickets IT suivant une méthodologie 
-                        UX professionnelle. De l'analyse utilisateur au prototype interactif, en passant 
-                        par la création d'un design system cohérent.
-                    </p>
-
-                    <div class="project-highlights">
-                        <div class="highlight-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            <span>Wireframes & Mockups</span>
-                        </div>
-                        <div class="highlight-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            <span>Design System complet</span>
-                        </div>
-                        <div class="highlight-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            <span>Prototype interactif</span>
-                        </div>
-                    </div>
-
-                    <div class="project-actions">
-                        <a href="https://www.figma.com/make/xbOUtLsz7EuYKLYNQKqqbJ/User-Personas-for-TechSolutions?node-id=0-1&p=f&t=7kuu4gT45lNZaaMY-0&fullscreen=1" class="btn-project btn-demo" target="_blank">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <polygon points="10 8 16 12 10 16 10 8"/>
-                            </svg>
-                            Voir Prototype
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Projet 3: Chatbot RIA -->
-            <article class="project-card-modern">
-                <div class="project-visual">
-                    <div class="project-image project-image-ai">
-                        <svg class="project-thumbnail" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Background -->
-                            <rect width="800" height="600" fill="#14b8a6"/>
-                            <rect width="800" height="600" fill="url(#grad3)" opacity="0.3"/>
-                            
-                            <defs>
-                                <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#14b8a6;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            
-                            <!-- Chat window -->
-                            <rect x="150" y="80" width="500" height="440" rx="15" fill="white" opacity="0.95"/>
-                            
-                            <!-- Header -->
-                            <rect x="150" y="80" width="500" height="50" rx="15" fill="#0f766e"/>
-                            <circle cx="180" cy="105" r="15" fill="white" opacity="0.3"/>
-                            <rect x="210" y="95" width="120" height="10" rx="5" fill="white" opacity="0.8"/>
-                            <rect x="210" y="110" width="80" height="8" rx="4" fill="white" opacity="0.5"/>
-                            
-                            <!-- Chat messages - User -->
-                            <rect x="360" y="160" width="250" height="60" rx="10" fill="#14b8a6" opacity="0.3"/>
-                            <rect x="380" y="175" width="180" height="10" rx="3" fill="#14b8a6" opacity="0.6"/>
-                            <rect x="380" y="195" width="150" height="10" rx="3" fill="#14b8a6" opacity="0.6"/>
-                            
-                            <!-- Chat messages - Bot -->
-                            <rect x="190" y="250" width="280" height="80" rx="10" fill="#f0fdfa"/>
-                            <circle cx="170" cy="280" r="15" fill="#14b8a6"/>
-                            <text x="170" y="287" text-anchor="middle" font-size="18" fill="white" font-weight="bold">AI</text>
-                            <rect x="210" y="265" width="200" height="10" rx="3" fill="#14b8a6" opacity="0.4"/>
-                            <rect x="210" y="285" width="220" height="10" rx="3" fill="#14b8a6" opacity="0.4"/>
-                            <rect x="210" y="305" width="160" height="10" rx="3" fill="#14b8a6" opacity="0.4"/>
-                            
-                            <!-- Chat messages - User -->
-                            <rect x="380" y="360" width="230" height="50" rx="10" fill="#14b8a6" opacity="0.3"/>
-                            <rect x="400" y="375" width="150" height="10" rx="3" fill="#14b8a6" opacity="0.6"/>
-                            <rect x="400" y="395" width="120" height="10" rx="3" fill="#14b8a6" opacity="0.6"/>
-                            
-                            <!-- Chat messages - Bot -->
-                            <rect x="190" y="440" width="260" height="60" rx="10" fill="#f0fdfa"/>
-                            <circle cx="170" cy="465" r="15" fill="#14b8a6"/>
-                            <text x="170" y="472" text-anchor="middle" font-size="18" fill="white" font-weight="bold">AI</text>
-                            <rect x="210" y="450" width="180" height="10" rx="3" fill="#14b8a6" opacity="0.4"/>
-                            <rect x="210" y="470" width="200" height="10" rx="3" fill="#14b8a6" opacity="0.4"/>
-                            
-                            <!-- Input box -->
-                            <rect x="170" y="535" width="440" height="45" rx="23" fill="white" stroke="#14b8a6" stroke-width="2"/>
-                            <circle cx="585" cy="557" r="15" fill="#14b8a6"/>
-                            <path d="M 580 557 L 590 557 L 585 552 Z" fill="white"/>
-                            
-                            <!-- Title -->
-                            <text x="400" y="50" text-anchor="middle" font-size="48" fill="white" font-weight="bold" font-family="Arial">CHATBOT IA</text>
-                        </svg>
-                    </div>
-                    <div class="project-tech-stack">
-                        <span class="tech-pill">Python</span>
-                        <span class="tech-pill">OpenAI</span>
-                        <span class="tech-pill">Flask</span>
-                    </div>
-                </div>
-                
-                <div class="project-content-modern">
-                    <div class="project-header-modern">
-                        <span class="project-category">IA • Chatbot</span>
-                        <h3>Chatbot d'Évaluation RIA</h3>
-                        <p class="project-date">Octobre 2025</p>
-                    </div>
-                    
-                    <p class="project-description-modern">
-                        Chatbot intelligent basé sur l'IA pour évaluer automatiquement les applications 
-                        web (RIA). Analyse l'architecture, les performances et génère des rapports 
-                        détaillés avec recommandations personnalisées.
-                    </p>
-
-                    <div class="project-highlights">
-                        <div class="highlight-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            <span>Analyse automatique</span>
-                        </div>
-                        <div class="highlight-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            <span>Rapports PDF</span>
-                        </div>
-                        <div class="highlight-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            <span>Chat en temps réel</span>
-                        </div>
-                    </div>
-
-                    <div class="project-actions">
-                        <a href="https://ria-check-go.onrender.com" class="btn-project btn-demo" target="_blank">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <polygon points="10 8 16 12 10 16 10 8"/>
-                            </svg>
-                            Démo Live
-                        </a>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="section section-certifications">
-        <div class="section-header">
-            <span class="section-number">03.</span>
-            <h2 class="section-title">Certifications</h2>
-        </div>
-        <p class="section-subtitle">Formations et compétences validées</p>
-        
-        <div class="cert-grid">
-            <div class="cert-card-modern">
-                <div class="cert-badge">
-                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
-                    </svg>
-                </div>
-                <h3>GitHub Foundations</h3>
-                <p class="cert-issuer">GitHub • GH-900</p>
-                <p class="cert-date">Octobre 2025</p>
-                <ul class="cert-skills">
-                    <li>Gestion de repositories</li>
-                    <li>Collaboration en équipe</li>
-                    <li>CI/CD avec Actions</li>
-                </ul>
-            </div>
-
-            <div class="cert-card-modern">
-                <div class="cert-badge">
-                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-                        <path d="M6 12v5c3 3 9 3 12 0v-5"/>
-                    </svg>
-                </div>
-                <h3>BTS SIO SLAM</h3>
-                <p class="cert-issuer">Lycée Simone Weil</p>
-                <p class="cert-date">2024 - 2026</p>
-                <ul class="cert-skills">
-                    <li>Développement web</li>
-                    <li>Bases de données</li>
-                    <li>Méthodologies Agile</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tech Watch Section -->
-    <section id="watch" class="section section-watch">
-        <div class="section-header">
-            <span class="section-number">04.</span>
-            <h2 class="section-title">Veille Technologique</h2>
-        </div>
-        <p class="section-subtitle">Rester à jour sur les tendances tech</p>
-        
-        <div class="watch-intro-modern">
-            <h3>Ma méthodologie de veille</h3>
-            <p>Je maintiens une veille technologique active sur les dernières innovations et tendances du secteur.</p>
-            <div class="watch-sources-modern">
-                <span class="source-tag">📱 Medium</span>
-                <span class="source-tag">💻 Dev.to</span>
-                <span class="source-tag">📧 Newsletters IA</span>
-                <span class="source-tag">🎥 YouTube Tech</span>
-                <span class="source-tag">🐙 GitHub Trending</span>
-            </div>
-        </div>
-
-        <div class="articles-grid-modern">
-            <article class="article-card-modern">
-                <div class="article-number">01</div>
-                <h3>📡 IA Weekly - Septembre 2025</h3>
-                <p>Analyse des annonces majeures de NVIDIA, Amazon et OpenAI et leur impact sur les métiers du développement.</p>
-                <div class="article-actions">
-                    <button onclick="openModal('synthese1')" class="btn-article">Lire la synthèse</button>
-                    <button onclick="openModal('affiche1')" class="btn-article-secondary">Voir l'affiche</button>
-                </div>
-            </article>
-
-            <article class="article-card-modern">
-                <div class="article-number">02</div>
-                <h3>🇫🇷 Souveraineté numérique française</h3>
-                <p>Exploration des enjeux stratégiques du secteur numérique en France et perspectives pour l'écosystème tech.</p>
-                <div class="article-actions">
-                    <button onclick="openModal('synthese2')" class="btn-article">Lire l'analyse</button>
-                    <button onclick="openModal('affiche2')" class="btn-article-secondary">Voir l'affiche</button>
-                </div>
-            </article>
-
-            <article class="article-card-modern">
-                <div class="article-number">03</div>
-                <h3>🤖 IA en 2026 : Prospective</h3>
-                <p>Vision prospective sur l'évolution de l'IA basée sur des analyses d'experts et implications professionnelles.</p>
-                <div class="article-actions">
-                    <button onclick="openModal('synthese3')" class="btn-article">Découvrir</button>
-                    <button onclick="openModal('affiche3')" class="btn-article-secondary">Voir l'affiche</button>
-                </div>
-            </article>
-        </div>
-
-        <!-- Modal pour afficher les synthèses et affiches -->
-        <div id="modalOverlay" class="modal-overlay" onclick="closeModal()">
-            <div class="modal-content" onclick="event.stopPropagation()">
-                <button class="modal-close" onclick="closeModal()">✕</button>
-                <div id="modalBody"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section section-experience">
-        <div class="section-header">
-            <span class="section-number">05.</span>
-            <h2 class="section-title">Expérience</h2>
-        </div>
-        <p class="section-subtitle">Parcours professionnel</p>
-        
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="experience-card-modern">
-                        <div class="experience-header-modern">
-                            <div>
-                                <h3>Développeur Web / Technicien IT</h3>
-                                <p class="company">Openscop</p>
-                            </div>
-                            <span class="experience-period">Mai - Juin 2025</span>
+                    <div class="project-content-modern">
+                        <div class="project-header-modern">
+                            <span class="project-category">API • Backend</span>
+                            <h3>API Citations</h3>
+                            <p class="project-date">Octobre 2025</p>
                         </div>
                         
-                        <div class="experience-description">
-                            <p>Stage de développement web au sein d'une équipe Agile, travaillant sur des projets clients avec PHP/Laravel.</p>
+                        <p class="project-description-modern">
+                            API REST complète pour gérer des citations avec toutes les opérations CRUD. 
+                            Implémentation professionnelle suivant les meilleures pratiques RESTful avec 
+                            validation des données et gestion d'erreurs robuste.
+                        </p>
+
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>5 endpoints RESTful</span>
+                            </div>
+                            <div class="highlight-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Validation avancée</span>
+                            </div>
+                            <div class="highlight-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Documentation complète</span>
+                            </div>
                         </div>
 
-                        <div class="experience-achievements">
-                            <h4>Réalisations clés</h4>
-                            <ul>
-                                <li>Développement d'un module de gestion utilisateurs (-40% temps de traitement)</li>
-                                <li>Optimisation des requêtes SQL (+30% performances)</li>
-                                <li>Participation aux sprints Agile et code reviews</li>
-                            </ul>
+                        <div class="project-actions">
+                            <a href="https://okpsaihtam.github.io/mission-1-api-citations-template/" class="btn-project" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polygon points="10 8 16 12 10 16 10 8"/>
+                                </svg>
+                                Démo Live
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 2: Figma TechSolutions -->
+                <article class="project-card-modern">
+                    <div class="project-visual">
+                        <div class="project-image">
+                            <svg class="project-thumbnail" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="800" height="600" fill="#f97316"/>
+                                <rect width="800" height="600" fill="url(#grad2)" opacity="0.3"/>
+                                <defs>
+                                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ea580c;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <rect x="80" y="80" width="280" height="200" rx="10" fill="white" opacity="0.9"/>
+                                <rect x="80" y="80" width="280" height="30" rx="10" fill="#0a192f"/>
+                                <rect x="100" y="130" width="100" height="12" rx="3" fill="#f97316" opacity="0.4"/>
+                                <rect x="100" y="155" width="180" height="12" rx="3" fill="#ea580c" opacity="0.4"/>
+                                <rect x="100" y="180" width="140" height="12" rx="3" fill="#f97316" opacity="0.4"/>
+                                <rect x="100" y="220" width="60" height="35" rx="5" fill="#f97316" opacity="0.6"/>
+                                <rect x="170" y="220" width="60" height="35" rx="5" fill="#ea580c" opacity="0.6"/>
+                                <rect x="440" y="80" width="280" height="200" rx="10" fill="white" opacity="0.9"/>
+                                <rect x="440" y="80" width="280" height="30" rx="10" fill="#0a192f"/>
+                                <circle cx="540" cy="170" r="35" fill="#f97316" opacity="0.4"/>
+                                <rect x="590" y="145" width="100" height="12" rx="3" fill="#ea580c" opacity="0.4"/>
+                                <rect x="590" y="170" width="80" height="12" rx="3" fill="#f97316" opacity="0.4"/>
+                                <rect x="460" y="220" width="80" height="35" rx="5" fill="#f97316" opacity="0.6"/>
+                                <rect x="550" y="220" width="80" height="35" rx="5" fill="#ea580c" opacity="0.6"/>
+                                <rect x="260" y="320" width="280" height="200" rx="10" fill="white" opacity="0.9"/>
+                                <rect x="260" y="320" width="280" height="30" rx="10" fill="#0a192f"/>
+                                <rect x="280" y="370" width="120" height="12" rx="3" fill="#f97316" opacity="0.4"/>
+                                <rect x="280" y="395" width="200" height="12" rx="3" fill="#ea580c" opacity="0.4"/>
+                                <rect x="280" y="420" width="160" height="12" rx="3" fill="#f97316" opacity="0.4"/>
+                                <rect x="280" y="460" width="70" height="35" rx="5" fill="#f97316" opacity="0.6"/>
+                                <rect x="360" y="460" width="70" height="35" rx="5" fill="#ea580c" opacity="0.6"/>
+                                <text x="400" y="80" text-anchor="middle" font-size="52" fill="white" font-weight="bold">UX/UI DESIGN</text>
+                                <text x="400" y="30" text-anchor="middle" font-size="32" fill="white" opacity="0.9" font-family="Arial">TechSolutions</text>
+                            </svg>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span class="tech-pill">Figma</span>
+                            <span class="tech-pill">UX Design</span>
+                            <span class="tech-pill">Prototyping</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content-modern">
+                        <div class="project-header-modern">
+                            <span class="project-category">UX/UI • Design</span>
+                            <h3>TechSolutions Design</h3>
+                            <p class="project-date">Octobre 2025</p>
+                        </div>
+                        
+                        <p class="project-description-modern">
+                            Conception complète d'un système de gestion de tickets IT suivant une méthodologie 
+                            UX professionnelle. De l'analyse utilisateur au prototype interactif, en passant 
+                            par la création d'un design system cohérent.
+                        </p>
+
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Wireframes & Mockups</span>
+                            </div>
+                            <div class="highlight-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Design System complet</span>
+                            </div>
+                            <div class="highlight-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Prototype interactif</span>
+                            </div>
                         </div>
 
-                        <div class="experience-tech">
-                            <span class="tech-pill-small">PHP</span>
-                            <span class="tech-pill-small">Laravel</span>
-                            <span class="tech-pill-small">MySQL</span>
-                            <span class="tech-pill-small">Git</span>
-                            <span class="tech-pill-small">JavaScript</span>
+                        <div class="project-actions">
+                            <a href="https://www.figma.com/make/xbOUtLsz7EuYKLYNQKqqbJ/User-Personas-for-TechSolutions?node-id=0-1&p=f&t=7kuu4gT45lNZaaMY-0&fullscreen=1" class="btn-project" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polygon points="10 8 16 12 10 16 10 8"/>
+                                </svg>
+                                Voir Prototype
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 3: Chatbot RIA -->
+                <article class="project-card-modern">
+                    <div class="project-visual">
+                        <div class="project-image">
+                            <svg class="project-thumbnail" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="800" height="600" fill="#64ffda"/>
+                                <rect width="800" height="600" fill="url(#grad3)" opacity="0.3"/>
+                                <defs>
+                                    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#52e4c2;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#64ffda;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <rect x="150" y="80" width="500" height="440" rx="15" fill="white" opacity="0.95"/>
+                                <rect x="150" y="80" width="500" height="50" rx="15" fill="#0a192f"/>
+                                <circle cx="180" cy="105" r="15" fill="white" opacity="0.3"/>
+                                <rect x="210" y="95" width="120" height="10" rx="5" fill="white" opacity="0.8"/>
+                                <rect x="210" y="110" width="80" height="8" rx="4" fill="white" opacity="0.5"/>
+                                <rect x="360" y="160" width="250" height="60" rx="10" fill="#64ffda" opacity="0.3"/>
+                                <rect x="380" y="175" width="180" height="10" rx="3" fill="#64ffda" opacity="0.6"/>
+                                <rect x="380" y="195" width="150" height="10" rx="3" fill="#64ffda" opacity="0.6"/>
+                                <rect x="190" y="250" width="280" height="80" rx="10" fill="#f0fdfa"/>
+                                <circle cx="170" cy="280" r="15" fill="#64ffda"/>
+                                <text x="170" y="287" text-anchor="middle" font-size="18" fill="white" font-weight="bold">AI</text>
+                                <rect x="210" y="265" width="200" height="10" rx="3" fill="#64ffda" opacity="0.4"/>
+                                <rect x="210" y="285" width="220" height="10" rx="3" fill="#64ffda" opacity="0.4"/>
+                                <rect x="210" y="305" width="160" height="10" rx="3" fill="#64ffda" opacity="0.4"/>
+                                <rect x="380" y="360" width="230" height="50" rx="10" fill="#64ffda" opacity="0.3"/>
+                                <rect x="400" y="375" width="150" height="10" rx="3" fill="#64ffda" opacity="0.6"/>
+                                <rect x="400" y="395" width="120" height="10" rx="3" fill="#64ffda" opacity="0.6"/>
+                                <rect x="190" y="440" width="260" height="60" rx="10" fill="#f0fdfa"/>
+                                <circle cx="170" cy="465" r="15" fill="#64ffda"/>
+                                <text x="170" y="472" text-anchor="middle" font-size="18" fill="white" font-weight="bold">AI</text>
+                                <rect x="210" y="450" width="180" height="10" rx="3" fill="#64ffda" opacity="0.4"/>
+                                <rect x="210" y="470" width="200" height="10" rx="3" fill="#64ffda" opacity="0.4"/>
+                                <rect x="170" y="535" width="440" height="45" rx="23" fill="white" stroke="#64ffda" stroke-width="2"/>
+                                <circle cx="585" cy="557" r="15" fill="#64ffda"/>
+                                <path d="M 580 557 L 590 557 L 585 552 Z" fill="white"/>
+                                <text x="400" y="50" text-anchor="middle" font-size="48" fill="white" font-weight="bold">CHATBOT IA</text>
+                            </svg>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">OpenAI</span>
+                            <span class="tech-pill">Flask</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content-modern">
+                        <div class="project-header-modern">
+                            <span class="project-category">IA • Chatbot</span>
+                            <h3>Chatbot d'Évaluation RIA</h3>
+                            <p class="project-date">Novembre 2025</p>
+                        </div>
+                        
+                        <p class="project-description-modern">
+                            Chatbot intelligent basé sur l'IA pour évaluer automatiquement les applications 
+                            web (RIA). Analyse l'architecture, les performances et génère des rapports 
+                            détaillés avec recommandations personnalisées.
+                        </p>
+
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Analyse automatique</span>
+                            </div>
+                            <div class="highlight-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Rapports PDF</span>
+                            </div>
+                            <div class="highlight-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Chat en temps réel</span>
+                            </div>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://ria-check-go.onrender.com" class="btn-project" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polygon points="10 8 16 12 10 16 10 8"/>
+                                </svg>
+                                Démo Live
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS SECTION -->
+        <section id="certifications" class="section">
+            <div class="section-header">
+                <p class="section-number">03.</p>
+                <h2 class="section-title">Certifications</h2>
+            </div>
+            
+            <div class="cert-grid">
+                <div class="cert-card-modern">
+                    <div class="cert-badge">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                        </svg>
+                    </div>
+                    <h3>GitHub Foundations</h3>
+                    <p class="cert-issuer">GitHub • GH-900</p>
+                    <p class="cert-date">Octobre 2025</p>
+                    <ul class="cert-skills">
+                        <li>Gestion de repositories</li>
+                        <li>Collaboration en équipe</li>
+                        <li>CI/CD avec Actions</li>
+                    </ul>
+                </div>
+
+                <div class="cert-card-modern">
+                    <div class="cert-badge">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                    </div>
+                    <h3>BTS SIO SLAM</h3>
+                    <p class="cert-issuer">Lycée Simone Weil</p>
+                    <p class="cert-date">2024 - 2026</p>
+                    <ul class="cert-skills">
+                        <li>Développement web</li>
+                        <li>Bases de données</li>
+                        <li>Méthodologies Agile</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECH WATCH SECTION -->
+        <section id="watch" class="section">
+            <div class="section-header">
+                <p class="section-number">04.</p>
+                <h2 class="section-title">Veille Technologique</h2>
+            </div>
+            
+            <div class="watch-intro-modern">
+                <h3>Ma méthodologie de veille</h3>
+                <p>Je maintiens une veille technologique active sur les dernières innovations et tendances du secteur.</p>
+                <div class="watch-sources-modern">
+                    <span class="source-tag">📱 Medium</span>
+                    <span class="source-tag">💻 Dev.to</span>
+                    <span class="source-tag">📧 Newsletters IA</span>
+                    <span class="source-tag">🎥 YouTube Tech</span>
+                    <span class="source-tag">🐙 GitHub Trending</span>
+                </div>
+            </div>
+
+            <div class="articles-grid-modern">
+                <article class="article-card-modern">
+                    <div class="article-number">01</div>
+                    <h3>📡 IA Weekly - Septembre 2025</h3>
+                    <p>Analyse des annonces majeures de NVIDIA, Amazon et OpenAI et leur impact sur les métiers du développement.</p>
+                    <div class="article-actions">
+                        <button onclick="openModal('synthese1')" class="btn-article">Lire la synthèse</button>
+                        <button onclick="openModal('affiche1')" class="btn-article-secondary">Voir l'affiche</button>
+                    </div>
+                </article>
+
+                <article class="article-card-modern">
+                    <div class="article-number">02</div>
+                    <h3>🇫🇷 Souveraineté numérique française</h3>
+                    <p>Exploration des enjeux stratégiques du secteur numérique en France et perspectives pour l'écosystème tech.</p>
+                    <div class="article-actions">
+                        <button onclick="openModal('synthese2')" class="btn-article">Lire l'analyse</button>
+                        <button onclick="openModal('affiche2')" class="btn-article-secondary">Voir l'affiche</button>
+                    </div>
+                </article>
+
+                <article class="article-card-modern">
+                    <div class="article-number">03</div>
+                    <h3>🤖 IA en 2026 : Prospective</h3>
+                    <p>Vision prospective sur l'évolution de l'IA basée sur des analyses d'experts et implications professionnelles.</p>
+                    <div class="article-actions">
+                        <button onclick="openModal('synthese3')" class="btn-article">Découvrir</button>
+                        <button onclick="openModal('affiche3')" class="btn-article-secondary">Voir l'affiche</button>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Modal pour afficher les synthèses et affiches -->
+            <div id="modalOverlay" class="modal-overlay" onclick="closeModal()">
+                <div class="modal-content" onclick="event.stopPropagation()">
+                    <button class="modal-close" onclick="closeModal()">✕</button>
+                    <div id="modalBody"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="section">
+            <div class="section-header">
+                <p class="section-number">05.</p>
+                <h2 class="section-title">Expérience</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card-modern">
+                            <div class="experience-header-modern">
+                                <div>
+                                    <h3>Développeur Web / Technicien IT</h3>
+                                    <p class="company">Openscop</p>
+                                </div>
+                                <span class="experience-period">Mai - Juin 2025</span>
+                            </div>
+                            
+                            <div class="experience-description">
+                                <p>Stage de développement web au sein d'une équipe Agile, travaillant sur des projets clients avec PHP/Laravel.</p>
+                            </div>
+
+                            <div class="experience-achievements">
+                                <h4>Réalisations clés</h4>
+                                <ul>
+                                    <li>Développement d'un module de gestion utilisateurs (-40% temps de traitement)</li>
+                                    <li>Optimisation des requêtes SQL (+30% performances)</li>
+                                    <li>Participation aux sprints Agile et code reviews</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-tech">
+                                <span class="tech-pill-small">PHP</span>
+                                <span class="tech-pill-small">Laravel</span>
+                                <span class="tech-pill-small">MySQL</span>
+                                <span class="tech-pill-small">Git</span>
+                                <span class="tech-pill-small">JavaScript</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section section-contact">
-        <div class="section-header">
-            <span class="section-number">06.</span>
-            <h2 class="section-title">Contact</h2>
-        </div>
-        <p class="section-subtitle">Travaillons ensemble</p>
-        
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>Restons en contact</h3>
-                <p>Je suis actuellement à la recherche d'une alternance pour approfondir mes compétences en développement full-stack. N'hésitez pas à me contacter !</p>
-                
-                <div class="contact-methods-modern">
-                    <a href="https://www.linkedin.com/in/mathias-celle-3b4b28291/" target="_blank" class="contact-item-modern">
-                        <div class="contact-icon-modern">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <strong>LinkedIn</strong>
-                            <span>Voir mon profil professionnel</span>
-                        </div>
-                    </a>
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section section-contact">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Me contacter</h3>
+                    <p>Je suis actuellement à la recherche d'une alternance pour approfondir mes compétences en développement full-stack et IA. N'hésitez pas à me contacter !</p>
+                    
+                    <div class="contact-methods-modern">
+                        <a href="https://www.linkedin.com/in/mathias-celle-3b4b28291/" target="_blank" class="contact-item-modern">
+                            <div class="contact-icon-modern">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <span>Voir mon profil professionnel</span>
+                            </div>
+                        </a>
 
-                    <a href="https://github.com/Okpsaihtam?tab=repositories" target="_blank" class="contact-item-modern">
-                        <div class="contact-icon-modern">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <strong>GitHub</strong>
-                            <span>Découvrir mes repositories</span>
-                        </div>
-                    </a>
+                        <a href="https://github.com/Okpsaihtam?tab=repositories" target="_blank" class="contact-item-modern">
+                            <div class="contact-icon-modern">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>GitHub</strong>
+                                <span>Découvrir mes repositories</span>
+                            </div>
+                        </a>
 
-                    <a href="#" onclick="openContactModal(); return false;" class="contact-item-modern">
-                        <div class="contact-icon-modern">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <strong>Email</strong>
-                            <span>M'envoyer un message</span>
-                        </div>
-                    </a>
+                        <a href="#" onclick="openContactModal(); return false;" class="contact-item-modern">
+                            <div class="contact-icon-modern">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Email</strong>
+                                <span>M'envoyer un message</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <!-- Modal Formulaire de Contact -->
     <div id="contactModalOverlay" class="modal-overlay" onclick="closeContactModal()">
@@ -708,10 +610,9 @@
             <button class="modal-close" onclick="closeContactModal()">✕</button>
             <div class="modal-body-contact">
                 <h2>📧 Me contacter</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 2rem;">Remplissez le formulaire ci-dessous et je vous répondrai dans les plus brefs délais.</p>
+                <p style="color: var(--text-light); margin-bottom: 2rem;">Remplissez le formulaire ci-dessous et je vous répondrai dans les plus brefs délais.</p>
                 
                 <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-                    <!-- Access Key Web3Forms -->
                     <input type="hidden" name="access_key" value="66c2a7c2-d1c9-45f8-a883-2da5bed5a493">
                     
                     <div class="form-group">
@@ -749,17 +650,17 @@
         </div>
     </div>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="footer-modern">
         <div class="footer-content">
             <p>© 2025 Mathias Celle - Développé avec passion</p>
             <div class="footer-links">
                 <a href="https://github.com/Okpsaihtam" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/mathias-celle-3b4b28291/" target="_blank">LinkedIn</a>
-                <a href="/cdn-cgi/l/email-protection#701d1104181911035e13151c1c15444242434030171d11191c5e131f1d">Email</a>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <a href="#home" class="back-to-top" id="backToTop">↑</a>
+    <script src="script.js"></script>
+</body>
+</html>
