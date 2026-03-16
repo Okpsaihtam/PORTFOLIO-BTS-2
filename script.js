@@ -121,64 +121,303 @@ function openModal(contentId) {
     // Contenu des modals
     const contents = {
         synthese1: `
-            <div class="modal-body-synthese">
-                <h2>📡 IA Weekly - Septembre 2025</h2>
-                <div class="synthese-meta">
-                    <div class="synthese-meta-item">
-                        <strong>Date</strong>
-                        <span>Septembre 2025</span>
+            <div style="padding: 2rem; color: var(--text);">
+                <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--secondary);">📡 IA Weekly - Septembre 2025</h2>
+                <div style="display: flex; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
+                    <div style="background: rgba(100, 255, 218, 0.1); padding: 1rem; border-radius: 8px;">
+                        <strong style="color: var(--secondary);">Date</strong>
+                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0;">Septembre 2025</p>
                     </div>
-                    <div class="synthese-meta-item">
-                        <strong>Sources</strong>
-                        <span>NVIDIA, Amazon, OpenAI</span>
+                    <div style="background: rgba(100, 255, 218, 0.1); padding: 1rem; border-radius: 8px;">
+                        <strong style="color: var(--secondary);">Sources</strong>
+                        <p style="color: var(--text-light); margin: 0.3rem 0 0 0;">NVIDIA, Amazon, OpenAI</p>
                     </div>
                 </div>
-                <h3>Annonces majeures</h3>
-                <p>Analyse des dernières innovations en IA et leur impact sur le développement...</p>
+                
+                <h3 style="color: var(--text); margin: 2rem 0 1rem 0;">Annonces majeures</h3>
+                <p style="color: var(--text-light); line-height: 1.7; margin-bottom: 1.5rem;">
+                    Cette semaine a été marquée par trois annonces majeures qui vont redéfinir le paysage de l'IA :
+                </p>
+                
+                <div style="background: rgba(100, 255, 218, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 3px solid var(--secondary);">
+                    <h4 style="color: var(--secondary); margin-bottom: 0.8rem;">NVIDIA H200 : La puissance multipliée par 2</h4>
+                    <p style="color: var(--text-light); line-height: 1.7;">
+                        NVIDIA dévoile le GPU H200, spécialement conçu pour l'entraînement de modèles IA. 
+                        Performances doublées par rapport au H100, avec une consommation énergétique réduite de 30%.
+                        Impact direct sur les coûts d'infrastructure IA.
+                    </p>
+                </div>
+
+                <div style="background: rgba(249, 115, 22, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 3px solid var(--accent);">
+                    <h4 style="color: var(--accent); margin-bottom: 0.8rem;">Amazon Bedrock Studio : Démocratisation de l'IA</h4>
+                    <p style="color: var(--text-light); line-height: 1.7;">
+                        Amazon lance Bedrock Studio, une plateforme no-code permettant aux non-développeurs de créer 
+                        des applications IA. Interface intuitive avec drag & drop, modèles pré-entraînés accessibles.
+                    </p>
+                </div>
+
+                <div style="background: rgba(100, 255, 218, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 3px solid var(--secondary);">
+                    <h4 style="color: var(--secondary); margin-bottom: 0.8rem;">OpenAI GPT-5 : Annonce pour Q1 2026</h4>
+                    <p style="color: var(--text-light); line-height: 1.7;">
+                        OpenAI confirme l'arrivée de GPT-5 au premier trimestre 2026. Capacités de raisonnement 
+                        améliorées, meilleure compréhension contextuelle et support multimodal natif (texte, image, audio).
+                    </p>
+                </div>
+
+                <h3 style="color: var(--text); margin: 2rem 0 1rem 0;">Mon analyse</h3>
+                <p style="color: var(--text-light); line-height: 1.7;">
+                    Ces évolutions confirment que l'IA devient un outil incontournable pour les développeurs. 
+                    Il est crucial de se former dès maintenant aux APIs d'IA et aux bonnes pratiques d'intégration 
+                    pour rester compétitif sur le marché du travail.
+                </p>
             </div>
         `,
         synthese2: `
-            <div class="modal-body-synthese">
-                <h2>🇫🇷 Souveraineté numérique française</h2>
-                <div class="synthese-meta">
-                    <div class="synthese-meta-item">
-                        <strong>Date</strong>
-                        <span>Octobre 2025</span>
-                    </div>
+            <div style="padding: 2rem; color: var(--text);">
+                <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--secondary);">🇫🇷 Souveraineté Numérique Française</h2>
+                <div style="background: rgba(100, 255, 218, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 2rem; display: inline-block;">
+                    <strong style="color: var(--secondary);">Date</strong>
+                    <p style="color: var(--text-light); margin: 0.3rem 0 0 0;">Octobre 2025</p>
                 </div>
-                <h3>Enjeux stratégiques</h3>
-                <p>Exploration des défis du secteur numérique en France...</p>
+                
+                <h3 style="color: var(--text); margin: 2rem 0 1rem 0;">Enjeux stratégiques</h3>
+                <p style="color: var(--text-light); line-height: 1.7; margin-bottom: 1.5rem;">
+                    La souveraineté numérique française est devenue un enjeu stratégique majeur dans un contexte 
+                    de dépendance croissante aux géants américains et chinois du numérique.
+                </p>
+
+                <div style="background: rgba(100, 255, 218, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 3px solid var(--secondary);">
+                    <h4 style="color: var(--secondary); margin-bottom: 0.8rem;">🔒 Protection des Données</h4>
+                    <p style="color: var(--text-light); line-height: 1.7;">
+                        Le RGPD a posé les bases, mais la France va plus loin avec des hébergeurs certifiés 
+                        (OVHcloud, Scaleway) et des solutions cloud souveraines pour les données sensibles 
+                        des administrations et entreprises stratégiques.
+                    </p>
+                </div>
+
+                <div style="background: rgba(249, 115, 22, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 3px solid var(--accent);">
+                    <h4 style="color: var(--accent); margin-bottom: 0.8rem;">🚀 Écosystème Tech Français</h4>
+                    <p style="color: var(--text-light); line-height: 1.7;">
+                        Émergence de champions français de l'IA comme Mistral AI (valorisé à 6 milliards €) 
+                        et Kyutai. La French Tech compte désormais 27 licornes et vise 100 d'ici 2030.
+                    </p>
+                </div>
+
+                <div style="background: rgba(100, 255, 218, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 3px solid var(--secondary);">
+                    <h4 style="color: var(--secondary); margin-bottom: 0.8rem;">👨‍💻 Formation et Emploi</h4>
+                    <p style="color: var(--text-light); line-height: 1.7;">
+                        Objectif : former 400 000 développeurs d'ici 2030. Multiplication des formations en 
+                        cybersécurité, IA et cloud souverain. Le BTS SIO s'adapte avec des modules spécifiques.
+                    </p>
+                </div>
+
+                <h3 style="color: var(--text); margin: 2rem 0 1rem 0;">Impact pour ma formation</h3>
+                <p style="color: var(--text-light); line-height: 1.7;">
+                    En tant qu'étudiant en BTS SIO, cette dynamique ouvre de nombreuses opportunités. 
+                    Se spécialiser dans les technologies souveraines françaises peut être un vrai différenciateur 
+                    sur le marché de l'emploi.
+                </p>
             </div>
         `,
         synthese3: `
-            <div class="modal-body-synthese">
-                <h2>🤖 IA en 2026 : Prospective</h2>
-                <div class="synthese-meta">
-                    <div class="synthese-meta-item">
-                        <strong>Date</strong>
-                        <span>Novembre 2025</span>
-                    </div>
+            <div style="padding: 2rem; color: var(--text);">
+                <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--secondary);">🤖 IA en 2026 : Vision Prospective</h2>
+                <div style="background: rgba(100, 255, 218, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 2rem; display: inline-block;">
+                    <strong style="color: var(--secondary);">Date</strong>
+                    <p style="color: var(--text-light); margin: 0.3rem 0 0 0;">Novembre 2025</p>
                 </div>
-                <h3>Vision prospective</h3>
-                <p>Analyse des tendances futures de l'intelligence artificielle...</p>
+                
+                <h3 style="color: var(--text); margin: 2rem 0 1rem 0;">Vision prospective</h3>
+                <p style="color: var(--text-light); line-height: 1.7; margin-bottom: 1.5rem;">
+                    Basé sur les tendances actuelles et l'analyse d'experts du secteur, voici ce qui nous 
+                    attend en 2026 dans le domaine de l'intelligence artificielle.
+                </p>
+
+                <div style="background: rgba(100, 255, 218, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 3px solid var(--secondary);">
+                    <h4 style="color: var(--secondary); margin-bottom: 0.8rem;">🎯 IA Multimodale Généralisée</h4>
+                    <p style="color: var(--text-light); line-height: 1.7;">
+                        Les modèles fusionneront naturellement texte, image, audio et vidéo. GPT-5 et Gemini 2.0 
+                        comprendront et généreront du contenu dans tous ces formats simultanément, ouvrant la voie 
+                        à des applications révolutionnaires.
+                    </p>
+                </div>
+
+                <div style="background: rgba(249, 115, 22, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 3px solid var(--accent);">
+                    <h4 style="color: var(--accent); margin-bottom: 0.8rem;">🤖 Agents Autonomes au Quotidien</h4>
+                    <p style="color: var(--text-light); line-height: 1.7;">
+                        Les assistants IA ne se contenteront plus de répondre : ils agiront. Réserver un vol, 
+                        négocier un contrat, gérer un projet... Les agents autonomes deviendront des collaborateurs 
+                        à part entière.
+                    </p>
+                </div>
+
+                <div style="background: rgba(100, 255, 218, 0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 3px solid var(--secondary);">
+                    <h4 style="color: var(--secondary); margin-bottom: 0.8rem;">📱 IA Edge : Intelligence Locale</h4>
+                    <p style="color: var(--text-light); line-height: 1.7;">
+                        Avec les puces spécialisées (Apple Silicon, Qualcomm), l'IA migre du cloud vers les appareils. 
+                        Smartphones et laptops exécuteront des LLMs localement, garantissant confidentialité et rapidité.
+                    </p>
+                </div>
+
+                <h3 style="color: var(--text); margin: 2rem 0 1rem 0;">Impact sur le métier de développeur</h3>
+                <ul style="list-style: none; padding-left: 0; color: var(--text-light); line-height: 1.8;">
+                    <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                        <span style="position: absolute; left: 0; color: var(--secondary);">✓</span>
+                        60% du code sera assisté par IA (GitHub Copilot, Cursor, etc.)
+                    </li>
+                    <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                        <span style="position: absolute; left: 0; color: var(--secondary);">✓</span>
+                        Nouveaux rôles : AI Engineer, Prompt Engineer, AI Product Manager
+                    </li>
+                    <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                        <span style="position: absolute; left: 0; color: var(--secondary);">✓</span>
+                        Focus sur l'architecture, la stratégie et l'éthique plutôt que le code brut
+                    </li>
+                    <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                        <span style="position: absolute; left: 0; color: var(--secondary);">✓</span>
+                        Maîtrise des APIs d'IA indispensable pour rester compétitif
+                    </li>
+                </ul>
+
+                <div style="background: rgba(100, 255, 218, 0.1); padding: 1.5rem; border-radius: 12px; margin-top: 2rem;">
+                    <p style="color: var(--text); margin: 0; font-weight: 600;">
+                        💡 Ma conclusion : L'IA ne remplacera pas les développeurs, mais les développeurs 
+                        qui maîtrisent l'IA remplaceront ceux qui ne la maîtrisent pas.
+                    </p>
+                </div>
             </div>
         `,
         affiche1: `
-            <div class="modal-body-affiche">
-                <h2>📊 Affiche - IA Weekly</h2>
-                <p>Contenu de l'affiche pour IA Weekly</p>
+            <div style="padding: 2rem; color: var(--text);">
+                <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--secondary);">📊 Affiche - IA Weekly (Septembre 2025)</h2>
+                
+                <div style="background: rgba(100, 255, 218, 0.1); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--secondary); margin-bottom: 2rem;">
+                    <h3 style="color: var(--text); margin-bottom: 1rem;">🚀 Annonces Majeures</h3>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--secondary);">→</span>
+                            <strong>NVIDIA</strong> : Nouveau GPU H200 pour l'IA (performances x2)
+                        </li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--secondary);">→</span>
+                            <strong>Amazon</strong> : Bedrock Studio - plateforme no-code pour IA
+                        </li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--secondary);">→</span>
+                            <strong>OpenAI</strong> : GPT-5 annoncé pour Q1 2026
+                        </li>
+                    </ul>
+                </div>
+
+                <div style="background: rgba(249, 115, 22, 0.1); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--accent); margin-bottom: 2rem;">
+                    <h3 style="color: var(--text); margin-bottom: 1rem;">💡 Impact sur le Développement</h3>
+                    <p style="color: var(--text-light); line-height: 1.7; margin-bottom: 1rem;">
+                        Ces innovations transforment profondément le métier de développeur :
+                    </p>
+                    <ul style="list-style: none; padding-left: 0; color: var(--text-light);">
+                        <li style="margin-bottom: 0.5rem;">✓ Automatisation accrue du code répétitif</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Nouveaux métiers : AI Engineer, Prompt Engineer</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Nécessité de maîtriser les APIs d'IA</li>
+                    </ul>
+                </div>
+
+                <div style="text-align: center; padding: 1rem; background: rgba(100, 255, 218, 0.05); border-radius: 8px;">
+                    <p style="color: var(--text-light); font-size: 0.9rem;">
+                        📅 Veille effectuée le 15 septembre 2025
+                    </p>
+                </div>
             </div>
         `,
         affiche2: `
-            <div class="modal-body-affiche">
-                <h2>📊 Affiche - Souveraineté numérique</h2>
-                <p>Contenu de l'affiche pour Souveraineté numérique</p>
+            <div style="padding: 2rem; color: var(--text);">
+                <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--secondary);">🇫🇷 Souveraineté Numérique Française</h2>
+                
+                <div style="background: rgba(100, 255, 218, 0.1); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--secondary); margin-bottom: 2rem;">
+                    <h3 style="color: var(--text); margin-bottom: 1rem;">🎯 Enjeux Stratégiques</h3>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative; color: var(--text-light);">
+                            <span style="position: absolute; left: 0; color: var(--secondary);">→</span>
+                            Indépendance technologique vis-à-vis des GAFAM
+                        </li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative; color: var(--text-light);">
+                            <span style="position: absolute; left: 0; color: var(--secondary);">→</span>
+                            Protection des données sensibles (RGPD)
+                        </li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative; color: var(--text-light);">
+                            <span style="position: absolute; left: 0; color: var(--secondary);">→</span>
+                            Développement d'un écosystème tech français compétitif
+                        </li>
+                    </ul>
+                </div>
+
+                <div style="background: rgba(249, 115, 22, 0.1); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--accent); margin-bottom: 2rem;">
+                    <h3 style="color: var(--text); margin-bottom: 1rem;">🚀 Initiatives Clés</h3>
+                    <p style="color: var(--text-light); line-height: 1.7; margin-bottom: 1rem;">
+                        La France investit massivement dans sa souveraineté numérique :
+                    </p>
+                    <ul style="list-style: none; padding-left: 0; color: var(--text-light);">
+                        <li style="margin-bottom: 0.5rem;">✓ Cloud souverain (OVHcloud, Scaleway)</li>
+                        <li style="margin-bottom: 0.5rem;">✓ IA française (Mistral AI, Kyutai)</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Formation : 400k développeurs d'ici 2030</li>
+                    </ul>
+                </div>
+
+                <div style="text-align: center; padding: 1rem; background: rgba(100, 255, 218, 0.05); border-radius: 8px;">
+                    <p style="color: var(--text-light); font-size: 0.9rem;">
+                        📅 Analyse effectuée en octobre 2025
+                    </p>
+                </div>
             </div>
         `,
         affiche3: `
-            <div class="modal-body-affiche">
-                <h2>📊 Affiche - IA 2026</h2>
-                <p>Contenu de l'affiche pour IA 2026</p>
+            <div style="padding: 2rem; color: var(--text);">
+                <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--secondary);">🤖 IA en 2026 : Vision Prospective</h2>
+                
+                <div style="background: rgba(100, 255, 218, 0.1); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--secondary); margin-bottom: 2rem;">
+                    <h3 style="color: var(--text); margin-bottom: 1rem;">🔮 Tendances Prévues</h3>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative; color: var(--text-light);">
+                            <span style="position: absolute; left: 0; color: var(--secondary);">→</span>
+                            <strong>IA Multimodale</strong> : Fusion texte, image, audio, vidéo
+                        </li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative; color: var(--text-light);">
+                            <span style="position: absolute; left: 0; color: var(--secondary);">→</span>
+                            <strong>Agents Autonomes</strong> : IA capable d'actions complexes
+                        </li>
+                        <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative; color: var(--text-light);">
+                            <span style="position: absolute; left: 0; color: var(--secondary);">→</span>
+                            <strong>IA Edge</strong> : Intelligence locale sans cloud
+                        </li>
+                    </ul>
+                </div>
+
+                <div style="background: rgba(249, 115, 22, 0.1); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--accent); margin-bottom: 2rem;">
+                    <h3 style="color: var(--text); margin-bottom: 1rem;">💼 Implications Professionnelles</h3>
+                    <p style="color: var(--text-light); line-height: 1.7; margin-bottom: 1rem;">
+                        Évolution du métier de développeur :
+                    </p>
+                    <ul style="list-style: none; padding-left: 0; color: var(--text-light);">
+                        <li style="margin-bottom: 0.5rem;">✓ Compétences IA deviennent essentielles</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Focus sur architecture et stratégie</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Collaboration homme-IA optimisée</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Éthique et responsabilité IA cruciales</li>
+                    </ul>
+                </div>
+
+                <div style="background: rgba(100, 255, 218, 0.05); padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;">
+                    <h4 style="color: var(--secondary); margin-bottom: 0.8rem;">📊 Statistiques Clés 2026</h4>
+                    <ul style="list-style: none; padding-left: 0; color: var(--text-light); font-size: 0.95rem;">
+                        <li style="margin-bottom: 0.3rem;">• 80% des entreprises utiliseront l'IA</li>
+                        <li style="margin-bottom: 0.3rem;">• +300% de postes "AI Engineer"</li>
+                        <li style="margin-bottom: 0.3rem;">• 60% du code assisté par IA</li>
+                    </ul>
+                </div>
+
+                <div style="text-align: center; padding: 1rem; background: rgba(100, 255, 218, 0.05); border-radius: 8px;">
+                    <p style="color: var(--text-light); font-size: 0.9rem;">
+                        📅 Prospective réalisée en novembre 2025
+                    </p>
+                </div>
             </div>
         `
     };
