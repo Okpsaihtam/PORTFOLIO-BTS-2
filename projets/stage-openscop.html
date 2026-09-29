@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Stage Openscop · Mathias Celle</title>
+<meta name="description" content="Développement d'un module d'administration des comptes et optimisation des requêtes SQL d'une application client, en sprints Agile.">
+<meta name="author" content="Mathias Celle">
+<meta property="og:title" content="Stage Openscop · Mathias Celle">
+<meta property="og:description" content="Développement d'un module d'administration des comptes et optimisation des requêtes SQL d'une application client, en sprints Agile.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#07140d">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/barlow-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/style.css">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Mathias Celle, retour à l'accueil"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M13 4l-9 5 3 8 4-2v21h18V15l4 2 3-8-9-5c-1 3-4 5-7 5s-6-2-7-5z" fill="var(--green)"/><path d="M13 4c1 3 4 5 7 5s6-2 7-5" fill="none" stroke="var(--bg)" stroke-width="1.6"/><text x="20" y="28" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="800" font-size="11" fill="var(--green-ink)">MC</text></svg><span><span class="brand-name">Mathias Celle</span><span class="brand-role">Développeur d'applications</span></span></a>
+    <nav class="nav" id="nav" aria-label="Navigation principale"><a href="../index.html">Accueil</a><a href="../projets.html" aria-current="page">Projets</a><a href="../cv.html">CV</a><a href="../numerique-responsable.html">Numérique responsable</a><a href="../veille.html">Veille</a><a href="../contact.html">Contact</a></nav>
+    <button class="icon-btn theme-btn" type="button" aria-label="Changer de thème (clair ou sombre)">
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+    <button class="icon-btn menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Ouvrir le menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+<main id="contenu">
+
+<section class="pitch-bg page-head">
+  <div class="pitch-lines" aria-hidden="true"><svg viewBox="0 0 1200 640" preserveAspectRatio="xMidYMid slice" fill="none" stroke="currentColor" stroke-width="3">
+<rect x="40" y="30" width="1120" height="580"/><line x1="600" y1="30" x2="600" y2="610"/><circle cx="600" cy="320" r="92"/><circle cx="600" cy="320" r="5" fill="currentColor"/>
+<rect x="40" y="170" width="170" height="300"/><rect x="40" y="250" width="60" height="140"/><path d="M210 262 a78 78 0 0 1 0 116"/>
+<rect x="990" y="170" width="170" height="300"/><rect x="1100" y="250" width="60" height="140"/><path d="M990 262 a78 78 0 0 0 0 116"/>
+<path d="M40 48 a18 18 0 0 0 18 -18 M1142 30 a18 18 0 0 0 18 18 M40 592 a18 18 0 0 1 18 18 M1142 610 a18 18 0 0 1 18 -18"/></svg></div>
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="../index.html">Accueil</a><span aria-hidden="true">/</span><a href="../projets.html">Projets</a><span aria-hidden="true">/</span><span aria-current="page">Stage Openscop</span></nav>
+    <h1 class="rise">Un module de gestion des utilisateurs en Laravel</h1>
+    <p class="lead rise rise-2">Stage de développement web chez Openscop, au sein d'une équipe Agile travaillant pour des clients</p>
+    <dl class="match-sheet rise rise-3" aria-label="Feuille de match du projet"><div><dt>Cadre</dt><dd>Stage BTS SIO · Openscop</dd></div><div><dt>Période</dt><dd>Mai à juin 2025</dd></div><div><dt>Mon rôle</dt><dd>Développeur web stagiaire</dd></div><div><dt>Livrables</dt><dd>Module utilisateurs en production</dd></div></dl>
+  </div>
+</section>
+<section class="section--tight">
+  <div class="wrap">
+    <figure class="cover"><button type="button" aria-label="Agrandir le rendu final" style="all:unset;cursor:zoom-in;display:block;width:100%"><img src="../assets/img/projets/stage-cover.svg" alt="Formulaire de modification d'un compte utilisateur avec ses règles de validation côté serveur" width="1200" height="750"></button><figcaption>Rendu final : l'écran de modification d'un compte (données fictives).</figcaption></figure>
+  </div>
+</section>
+<section class="section" style="padding-top:0">
+  <div class="wrap fiche">
+    <div class="fiche-main">
+      <div class="fiche-block" id="contexte"><span class="kicker">Avant-match</span><h2>Contexte et problématique</h2><p>Openscop développe des applications web pour ses clients. J'ai rejoint une équipe de développeurs travaillant en méthode Agile sur une application Laravel existante.</p><p>Le client devait gérer lui-même les comptes de ses collaborateurs (création, rôles, désactivation) sans passer par l'équipe technique, et la liste des comptes devenait lente à mesure que leur nombre augmentait.</p><p class="problem">Comment donner au client l'autonomie sur ses comptes utilisateurs, tout en gardant une application rapide et sûre ?</p></div>
+      <div class="fiche-block" id="objectifs"><span class="kicker">Le plan de jeu</span><h2>Objectifs</h2><ul class="objectives"><li>Livrer un module d'administration des comptes utilisable par le client</li><li>Réduire le temps de traitement des opérations courantes</li><li>Améliorer les performances de la liste des comptes</li><li>M'intégrer au fonctionnement d'une équipe professionnelle</li></ul><div class="scoreboard" style="grid-template-columns:repeat(3,minmax(0,1fr))"><div><b>−40 %</b><span>de temps de traitement des opérations sur les comptes</span></div><div><b>+30 %</b><span>de performances sur les pages optimisées</span></div><div><b>2</b><span>requêtes au lieu d'une par compte affiché</span></div></div></div>
+      <div class="fiche-block" id="missions"><span class="kicker">Mon poste</span><h2>Missions principales</h2><ul class="missions"><li>Développer la liste paginée, la recherche et le filtre par rôle</li><li>Créer les formulaires de création et de modification avec validation côté serveur</li><li>Restreindre l'accès aux administrateurs avec les Policies Laravel</li><li>Optimiser les requêtes Eloquent et ajouter les index SQL nécessaires</li><li>Participer aux cérémonies Scrum et aux revues de code</li></ul></div>
+      <div class="fiche-block" id="etapes"><span class="kicker">Le déroulé</span><h2>Étapes clés</h2><ol class="steps"><li><h3>Intégration dans l'équipe</h3><p>Installation de l'environnement, découverte du code existant, des conventions et du workflow Git de l'équipe.</p></li><li><h3>Analyse du besoin</h3><p>Lecture des user stories avec le chef de projet, découpage en tâches estimées pour le sprint.</p></li><li><h3>Développement du module</h3><p>Migrations, modèles, contrôleurs, vues Blade, règles de validation et autorisations.</p></li><li><h3>Optimisation SQL</h3><p>Repérage des requêtes répétées (problème N+1), chargement anticipé, sélection des seules colonnes utiles, index.</p></li><li><h3>Revue et mise en production</h3><p>Pull requests relues par un développeur senior, corrections, tests puis démonstration au client en revue de sprint.</p></li></ol></div>
+      <div class="fiche-block" id="competences"><span class="kicker">Ce que j'ai mobilisé</span><h2>Compétences</h2><div class="skills-3"><div><h3>Techniques</h3><ul><li>Laravel : Eloquent, migrations, Blade, Policies</li><li>Optimisation de requêtes SQL</li><li>Validation côté serveur</li><li>Git en équipe (branches, pull requests)</li></ul></div><div><h3>Transversales</h3><ul><li>Méthode Scrum</li><li>Estimation des tâches</li><li>Lecture d'un code existant</li><li>Communication avec un chef de projet</li></ul></div><div><h3>Humaines</h3><ul><li>Intégration dans une équipe</li><li>Écoute des retours en revue de code</li><li>Ponctualité et fiabilité</li><li>Adaptabilité</li></ul></div></div></div>
+      <div class="fiche-block" id="outils"><span class="kicker">L'équipement</span><h2>Outils utilisés</h2><ul class="tools"><li><b>PHP · Laravel</b><span>Framework back-end</span></li><li><b>MySQL</b><span>Base de données</span></li><li><b>Blade · JavaScript</b><span>Interface</span></li><li><b>Git</b><span>Branches et revues de code</span></li><li><b>Scrum</b><span>Sprints et cérémonies</span></li></ul></div>
+      <div class="fiche-block" id="apports"><span class="kicker">Lien avec la formation</span><h2>Apports académiques</h2><p>Compétences du référentiel du BTS SIO option SLAM mobilisées dans ce projet (B1 : support et mise à disposition de services, B2 : conception et développement d'applications, B3 : cybersécurité).</p><div class="table-wrap"><table><thead><tr><th scope="col">Compétence du référentiel</th><th scope="col">Mise en œuvre dans le projet</th></tr></thead><tbody><tr><td><strong>B2 · Concevoir et développer une solution applicative</strong></td><td>Développement d'un module complet dans une application existante</td></tr><tr><td><strong>B2 · Assurer la maintenance corrective ou évolutive</strong></td><td>Intervention dans un code en production, sans régression</td></tr><tr><td><strong>B2 · Gérer les données</strong></td><td>Optimisation des requêtes et indexation</td></tr><tr><td><strong>B1 · Travailler en mode projet</strong></td><td>Sprints, estimation, revues et démonstration client</td></tr></tbody></table></div></div>
+      <div class="fiche-block" id="responsable"><div class="green-box"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-8 5-13 15-14-1 10-6 15-14 15"/><path d="M5 19l7-7"/></svg> Numérique responsable</h3><ul><li>Pagination et sélection des seules colonnes utiles : moins de données lues, transférées et affichées.</li><li>Chargement anticipé des rôles : 2 requêtes au lieu d'une par compte affiché, donc moins de charge serveur à chaque visite.</li><li>Désactivation plutôt que suppression des comptes, pour garder un historique fiable sans dupliquer les données.</li></ul><p style="font-size:.95rem"><a href="../numerique-responsable.html">Ma démarche de numérique responsable</a></p></div></div>
+      <div class="fiche-block" id="illustrations"><span class="kicker">Les images du match</span><h2>Illustrations</h2><div class="gallery"><figure><button type="button" aria-label="Agrandir : Sprint Scrum"><img src="../assets/img/projets/stage-1-sprint.svg" alt="Sprint Scrum : Tableau de sprint des tâches du module." loading="lazy" width="1200" height="750"></button><figcaption><b>Sprint Scrum.</b> Tableau de sprint des tâches du module.</figcaption></figure><figure><button type="button" aria-label="Agrandir : Liste des comptes"><img src="../assets/img/projets/stage-2-module.svg" alt="Liste des comptes : Recherche, rôles, statut et pagination." loading="lazy" width="1200" height="750"></button><figcaption><b>Liste des comptes.</b> Recherche, rôles, statut et pagination.</figcaption></figure><figure><button type="button" aria-label="Agrandir : Optimisation SQL"><img src="../assets/img/projets/stage-3-sql.svg" alt="Optimisation SQL : Principe du chargement anticipé contre le problème N+1." loading="lazy" width="1200" height="750"></button><figcaption><b>Optimisation SQL.</b> Principe du chargement anticipé contre le problème N+1.</figcaption></figure><figure><button type="button" aria-label="Agrandir : Workflow Git"><img src="../assets/img/projets/stage-4-git.svg" alt="Workflow Git : Branche de fonctionnalité, revue puis fusion." loading="lazy" width="1200" height="750"></button><figcaption><b>Workflow Git.</b> Branche de fonctionnalité, revue puis fusion.</figcaption></figure></div></div>
+      <div class="fiche-block" id="bilan"><span class="kicker">Analyse d'après-match</span><h2>Bilan réflexif</h2><div class="debrief"><div class="debrief-grid"><div><h3>Ce que j'ai appris</h3><p>Coder en équipe, c'est écrire pour être relu. Les revues de code m'ont appris à nommer clairement, à découper mes commits et à justifier mes choix.</p></div><div><h3>Difficulté et solution</h3><p>La liste des comptes ralentissait à cause d'une requête par ligne. Avec l'outil de débogage de Laravel, j'ai identifié le problème N+1 et l'ai corrigé par un chargement anticipé.</p></div><div><h3>Pour aller plus loin</h3><p>Écrire les tests automatisés dès le début de la tâche plutôt qu'à la fin, et documenter le module pour les prochains développeurs.</p></div></div><p class="problem" style="font-style:normal">Ce stage m'a confirmé que je veux travailler dans une équipe de développement : j'y ai gagné en méthode, en qualité de code et en confiance.</p></div>
+        <div class="btn-row"><a class="btn btn--ghost" href="../projets.html">Tous les projets</a></div>
+      </div>
+      <nav class="project-nav" aria-label="Autres projets"><a href="chatbot-ria.html"><small>Projet précédent</small><strong>Chatbot RIA</strong></a><a href="api-citations.html"><small>Projet suivant</small><strong>API Citations</strong></a></nav>
+    </div>
+    <aside class="aside" aria-label="Sommaire et lien du projet">
+      <div class="aside-box"><h2>Projet finalisé</h2><p class="muted" style="font-size:.92rem">Projet réalisé pour un client d'Openscop : le code et l'application ne sont pas publics. Les captures ont été recréées avec des données fictives pour respecter la confidentialité.</p></div>
+      <div class="aside-box toc-box"><h2>Sommaire</h2><ol class="toc"><li><a href="#contexte">Contexte</a></li><li><a href="#objectifs">Objectifs</a></li><li><a href="#missions">Missions</a></li><li><a href="#etapes">Étapes</a></li><li><a href="#competences">Compétences</a></li><li><a href="#outils">Outils</a></li><li><a href="#apports">Apports académiques</a></li><li><a href="#responsable">Numérique responsable</a></li><li><a href="#illustrations">Illustrations</a></li><li><a href="#bilan">Bilan réflexif</a></li></ol></div>
+      <div class="aside-box"><h2>Technologies</h2><ul class="chips"><li>Laravel</li><li>PHP</li><li>MySQL</li><li>Scrum</li></ul></div>
+    </aside>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h2>Mathias Celle</h2>
+        <p>Développeur d'applications full-stack, orienté intégration de l'IA. Titulaire du BTS SIO option SLAM, en formation Développeur IA à l'EPSI.</p>
+      </div>
+      <div>
+        <h2>Plan du site</h2>
+        <ul><li><a href="../index.html">Accueil</a></li><li><a href="../projets.html">Projets</a></li><li><a href="../cv.html">CV</a></li><li><a href="../numerique-responsable.html">Numérique responsable</a></li><li><a href="../veille.html">Veille</a></li><li><a href="../contact.html">Contact</a></li><li><a href="../coulisses.html">Coulisses du portfolio</a></li></ul>
+      </div>
+      <div>
+        <h2>Réseaux</h2>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/mathias-celle-3b4b28291/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (nouvel onglet)</span></a></li>
+          <li><a href="https://github.com/Okpsaihtam" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (nouvel onglet)</span></a></li>
+          <li><a href="../contact.html">Formulaire de contact</a></li>
+          <li><a href="../assets/cv/Mathias-Celle-CV.pdf" download>CV en PDF</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Mathias Celle · Site statique sans traceur ni cookie</span>
+      <span class="chant">Allez les Verts</span>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>
