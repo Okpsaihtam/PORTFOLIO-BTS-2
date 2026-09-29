@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chatbot RIA · Mathias Celle</title>
+<meta name="description" content="Un assistant conversationnel qui analyse une application web (architecture, performances, accessibilité) et génère un rapport de recommandations.">
+<meta name="author" content="Mathias Celle">
+<meta property="og:title" content="Chatbot RIA · Mathias Celle">
+<meta property="og:description" content="Un assistant conversationnel qui analyse une application web (architecture, performances, accessibilité) et génère un rapport de recommandations.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#07140d">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/barlow-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/style.css">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Mathias Celle, retour à l'accueil"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M13 4l-9 5 3 8 4-2v21h18V15l4 2 3-8-9-5c-1 3-4 5-7 5s-6-2-7-5z" fill="var(--green)"/><path d="M13 4c1 3 4 5 7 5s6-2 7-5" fill="none" stroke="var(--bg)" stroke-width="1.6"/><text x="20" y="28" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="800" font-size="11" fill="var(--green-ink)">MC</text></svg><span><span class="brand-name">Mathias Celle</span><span class="brand-role">Développeur d'applications</span></span></a>
+    <nav class="nav" id="nav" aria-label="Navigation principale"><a href="../index.html">Accueil</a><a href="../projets.html" aria-current="page">Projets</a><a href="../cv.html">CV</a><a href="../numerique-responsable.html">Numérique responsable</a><a href="../veille.html">Veille</a><a href="../contact.html">Contact</a></nav>
+    <button class="icon-btn theme-btn" type="button" aria-label="Changer de thème (clair ou sombre)">
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+    <button class="icon-btn menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Ouvrir le menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+<main id="contenu">
+
+<section class="pitch-bg page-head">
+  <div class="pitch-lines" aria-hidden="true"><svg viewBox="0 0 1200 640" preserveAspectRatio="xMidYMid slice" fill="none" stroke="currentColor" stroke-width="3">
+<rect x="40" y="30" width="1120" height="580"/><line x1="600" y1="30" x2="600" y2="610"/><circle cx="600" cy="320" r="92"/><circle cx="600" cy="320" r="5" fill="currentColor"/>
+<rect x="40" y="170" width="170" height="300"/><rect x="40" y="250" width="60" height="140"/><path d="M210 262 a78 78 0 0 1 0 116"/>
+<rect x="990" y="170" width="170" height="300"/><rect x="1100" y="250" width="60" height="140"/><path d="M990 262 a78 78 0 0 0 0 116"/>
+<path d="M40 48 a18 18 0 0 0 18 -18 M1142 30 a18 18 0 0 0 18 18 M40 592 a18 18 0 0 1 18 18 M1142 610 a18 18 0 0 1 18 -18"/></svg></div>
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="../index.html">Accueil</a><span aria-hidden="true">/</span><a href="../projets.html">Projets</a><span aria-hidden="true">/</span><span aria-current="page">Chatbot RIA</span></nav>
+    <h1 class="rise">Un chatbot qui audite les applications web</h1>
+    <p class="lead rise rise-2">Intégrer un modèle de langage dans une application Flask pour évaluer une RIA et produire un rapport</p>
+    <dl class="match-sheet rise rise-3" aria-label="Feuille de match du projet"><div><dt>Cadre</dt><dd>Projet de développement IA</dd></div><div><dt>Période</dt><dd>Novembre 2025</dd></div><div><dt>Mon rôle</dt><dd>Développeur full-stack</dd></div><div><dt>Livrables</dt><dd>Application en ligne, rapport PDF</dd></div></dl>
+  </div>
+</section>
+<section class="section--tight">
+  <div class="wrap">
+    <figure class="cover"><button type="button" aria-label="Agrandir le rendu final" style="all:unset;cursor:zoom-in;display:block;width:100%"><img src="../assets/img/projets/ria-cover.svg" alt="Interface du chatbot RIA Check pendant une conversation d'évaluation" width="1200" height="750"></button><figcaption>Rendu final : l'utilisateur colle une URL et dialogue avec l'assistant.</figcaption></figure>
+  </div>
+</section>
+<section class="section" style="padding-top:0">
+  <div class="wrap fiche">
+    <div class="fiche-main">
+      <div class="fiche-block" id="contexte"><span class="kicker">Avant-match</span><h2>Contexte et problématique</h2><p>Une RIA (Rich Internet Application) est une application web riche, qui se comporte comme un logiciel installé. Les évaluer demande de regarder à la fois le code, les performances et l'expérience utilisateur, ce qui prend du temps à un développeur.</p><p>J'ai voulu construire un assistant capable de faire un premier diagnostic et de l'expliquer en langage clair, pour une personne technique ou non.</p><p class="problem">Comment utiliser un modèle de langage pour produire une évaluation utile et fiable d'une application web, sans en faire une boîte noire ?</p></div>
+      <div class="fiche-block" id="objectifs"><span class="kicker">Le plan de jeu</span><h2>Objectifs</h2><ul class="objectives"><li>Intégrer une API de modèle de langage dans une vraie application</li><li>Structurer une analyse en critères mesurables</li><li>Générer un rapport exploitable en équipe</li><li>Mettre l'application en ligne</li></ul></div>
+      <div class="fiche-block" id="missions"><span class="kicker">Mon poste</span><h2>Missions principales</h2><ul class="missions"><li>Concevoir le prompt système et la grille d'évaluation (architecture, performances, accessibilité, sécurité, UX)</li><li>Développer le serveur Flask et ses routes de conversation et de rapport</li><li>Récupérer et résumer le contenu de la page analysée avant de l'envoyer au modèle</li><li>Créer l'interface de chat côté navigateur</li><li>Générer le rapport PDF et déployer l'application sur Render</li></ul></div>
+      <div class="fiche-block" id="etapes"><span class="kicker">Le déroulé</span><h2>Étapes clés</h2><ol class="steps"><li><h3>Cadrage</h3><p>Choix des critères d'évaluation et du format de réponse attendu, pour que chaque analyse suive la même grille.</p></li><li><h3>Serveur et API</h3><p>Routes Flask, appel au modèle de langage, clé d'API stockée dans une variable d'environnement côté serveur.</p></li><li><h3>Interface de chat</h3><p>Page HTML, CSS et JavaScript : envoi des messages, affichage des réponses, état de chargement.</p></li><li><h3>Rapport PDF</h3><p>Mise en forme des résultats par critère avec une recommandation prioritaire, téléchargeable en un clic.</p></li><li><h3>Déploiement et essais</h3><p>Mise en ligne sur Render, essais sur plusieurs sites et ajustement du prompt quand les réponses étaient trop vagues.</p></li></ol></div>
+      <div class="fiche-block" id="competences"><span class="kicker">Ce que j'ai mobilisé</span><h2>Compétences</h2><div class="skills-3"><div><h3>Techniques</h3><ul><li>Python et Flask</li><li>Intégration d'une API d'IA</li><li>Conception de prompts</li><li>Front-end HTML, CSS, JavaScript</li><li>Déploiement cloud</li></ul></div><div><h3>Transversales</h3><ul><li>Veille sur les outils d'IA</li><li>Esprit critique face aux réponses d'un modèle</li><li>Vulgarisation technique</li></ul></div><div><h3>Humaines</h3><ul><li>Curiosité</li><li>Autonomie</li><li>Persévérance</li><li>Prise d'initiative</li></ul></div></div></div>
+      <div class="fiche-block" id="outils"><span class="kicker">L'équipement</span><h2>Outils utilisés</h2><ul class="tools"><li><b>Python 3</b><span>Langage serveur</span></li><li><b>Flask</b><span>Micro-framework web</span></li><li><b>API OpenAI</b><span>Modèle de langage</span></li><li><b>HTML · CSS · JS</b><span>Interface de chat</span></li><li><b>Render</b><span>Hébergement</span></li><li><b>Git · GitHub</b><span>Versionnement</span></li></ul></div>
+      <div class="fiche-block" id="apports"><span class="kicker">Lien avec la formation</span><h2>Apports académiques</h2><p>Compétences du référentiel du BTS SIO option SLAM mobilisées dans ce projet (B1 : support et mise à disposition de services, B2 : conception et développement d'applications, B3 : cybersécurité).</p><div class="table-wrap"><table><thead><tr><th scope="col">Compétence du référentiel</th><th scope="col">Mise en œuvre dans le projet</th></tr></thead><tbody><tr><td><strong>B2 · Concevoir et développer une solution applicative</strong></td><td>Application web complète, du serveur à l'interface</td></tr><tr><td><strong>B3 · Cybersécurité d'une solution applicative</strong></td><td>Clé d'API protégée côté serveur, taille des messages limitée</td></tr><tr><td><strong>B1 · Organiser son développement professionnel</strong></td><td>Veille et montée en compétence sur l'IA générative</td></tr><tr><td><strong>B1 · Mettre à disposition un service informatique</strong></td><td>Déploiement et accès public à l'application</td></tr></tbody></table></div></div>
+      <div class="fiche-block" id="responsable"><div class="green-box"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-8 5-13 15-14-1 10-6 15-14 15"/><path d="M5 19l7-7"/></svg> Numérique responsable</h3><ul><li>Messages limités en longueur et réponses plafonnées en jetons : chaque appel au modèle consomme moins d'énergie.</li><li>Le contenu de la page est résumé avant l'envoi, au lieu de transmettre tout le code source.</li><li>Pas de base de conversations : les échanges ne sont pas stockés sur le serveur.</li></ul><p style="font-size:.95rem"><a href="../numerique-responsable.html">Ma démarche de numérique responsable</a></p></div></div>
+      <div class="fiche-block" id="illustrations"><span class="kicker">Les images du match</span><h2>Illustrations</h2><div class="gallery"><figure><button type="button" aria-label="Agrandir : Architecture"><img src="../assets/img/projets/ria-1-architecture.svg" alt="Architecture : Le serveur Flask orchestre l'analyse et l'appel au modèle." loading="lazy" width="1200" height="750"></button><figcaption><b>Architecture.</b> Le serveur Flask orchestre l'analyse et l'appel au modèle.</figcaption></figure><figure><button type="button" aria-label="Agrandir : Page d'accueil"><img src="../assets/img/projets/ria-4-accueil.svg" alt="Page d'accueil : Point d'entrée : une URL à analyser." loading="lazy" width="1200" height="750"></button><figcaption><b>Page d'accueil.</b> Point d'entrée : une URL à analyser.</figcaption></figure><figure><button type="button" aria-label="Agrandir : Rapport"><img src="../assets/img/projets/ria-2-rapport.svg" alt="Rapport : Exemple de rapport par critère avec une recommandation prioritaire." loading="lazy" width="1200" height="750"></button><figcaption><b>Rapport.</b> Exemple de rapport par critère avec une recommandation prioritaire.</figcaption></figure><figure><button type="button" aria-label="Agrandir : Route /chat"><img src="../assets/img/projets/ria-3-code.svg" alt="Route /chat : Principe de la route qui appelle le modèle (extrait simplifié)." loading="lazy" width="1200" height="750"></button><figcaption><b>Route /chat.</b> Principe de la route qui appelle le modèle (extrait simplifié).</figcaption></figure></div></div>
+      <div class="fiche-block" id="bilan"><span class="kicker">Analyse d'après-match</span><h2>Bilan réflexif</h2><div class="debrief"><div class="debrief-grid"><div><h3>Ce que j'ai appris</h3><p>Un modèle de langage est un composant comme un autre : il faut encadrer ses entrées, vérifier ses sorties et prévoir le cas où il se trompe.</p></div><div><h3>Difficulté et solution</h3><p>Les premières évaluations étaient trop générales. J'ai imposé une grille de critères et un format de réponse précis dans le prompt système, ce qui a rendu les rapports comparables.</p></div><div><h3>Pour aller plus loin</h3><p>Croiser l'avis du modèle avec des mesures objectives (Lighthouse, validateur W3C) et ajouter un historique des analyses.</p></div></div><p class="problem" style="font-style:normal">Ce projet confirme mon orientation vers le développement IA : j'aime relier un modèle de langage à un besoin concret et en faire un outil que d'autres peuvent utiliser.</p></div>
+        <div class="btn-row"><a class="btn btn--primary" href="https://ria-check-go.onrender.com" target="_blank" rel="noopener noreferrer">Tester l'application <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg><span class="sr-only"> (s'ouvre dans un nouvel onglet)</span></a><a class="btn btn--ghost" href="../projets.html">Tous les projets</a></div>
+      </div>
+      <nav class="project-nav" aria-label="Autres projets"><a href="techsolutions.html"><small>Projet précédent</small><strong>TechSolutions</strong></a><a href="stage-openscop.html"><small>Projet suivant</small><strong>Stage Openscop</strong></a></nav>
+    </div>
+    <aside class="aside" aria-label="Sommaire et lien du projet">
+      <div class="aside-box"><h2>Projet finalisé</h2><a class="btn btn--primary" href="https://ria-check-go.onrender.com" target="_blank" rel="noopener noreferrer">Tester l'application <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg><span class="sr-only"> (s'ouvre dans un nouvel onglet)</span></a></div>
+      <div class="aside-box toc-box"><h2>Sommaire</h2><ol class="toc"><li><a href="#contexte">Contexte</a></li><li><a href="#objectifs">Objectifs</a></li><li><a href="#missions">Missions</a></li><li><a href="#etapes">Étapes</a></li><li><a href="#competences">Compétences</a></li><li><a href="#outils">Outils</a></li><li><a href="#apports">Apports académiques</a></li><li><a href="#responsable">Numérique responsable</a></li><li><a href="#illustrations">Illustrations</a></li><li><a href="#bilan">Bilan réflexif</a></li></ol></div>
+      <div class="aside-box"><h2>Technologies</h2><ul class="chips"><li>Python</li><li>Flask</li><li>API OpenAI</li><li>PDF</li></ul></div>
+    </aside>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h2>Mathias Celle</h2>
+        <p>Développeur d'applications full-stack, orienté intégration de l'IA. Titulaire du BTS SIO option SLAM, en formation Développeur IA à l'EPSI.</p>
+      </div>
+      <div>
+        <h2>Plan du site</h2>
+        <ul><li><a href="../index.html">Accueil</a></li><li><a href="../projets.html">Projets</a></li><li><a href="../cv.html">CV</a></li><li><a href="../numerique-responsable.html">Numérique responsable</a></li><li><a href="../veille.html">Veille</a></li><li><a href="../contact.html">Contact</a></li><li><a href="../coulisses.html">Coulisses du portfolio</a></li></ul>
+      </div>
+      <div>
+        <h2>Réseaux</h2>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/mathias-celle-3b4b28291/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (nouvel onglet)</span></a></li>
+          <li><a href="https://github.com/Okpsaihtam" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (nouvel onglet)</span></a></li>
+          <li><a href="../contact.html">Formulaire de contact</a></li>
+          <li><a href="../assets/cv/Mathias-Celle-CV.pdf" download>CV en PDF</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Mathias Celle · Site statique sans traceur ni cookie</span>
+      <span class="chant">Allez les Verts</span>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

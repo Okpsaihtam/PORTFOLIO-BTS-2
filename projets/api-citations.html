@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>API Citations · Mathias Celle</title>
+<meta name="description" content="Cinq routes RESTful, une validation stricte des données et des réponses d'erreur exploitables par n'importe quel client.">
+<meta name="author" content="Mathias Celle">
+<meta property="og:title" content="API Citations · Mathias Celle">
+<meta property="og:description" content="Cinq routes RESTful, une validation stricte des données et des réponses d'erreur exploitables par n'importe quel client.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#07140d">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/barlow-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/style.css">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Mathias Celle, retour à l'accueil"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M13 4l-9 5 3 8 4-2v21h18V15l4 2 3-8-9-5c-1 3-4 5-7 5s-6-2-7-5z" fill="var(--green)"/><path d="M13 4c1 3 4 5 7 5s6-2 7-5" fill="none" stroke="var(--bg)" stroke-width="1.6"/><text x="20" y="28" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="800" font-size="11" fill="var(--green-ink)">MC</text></svg><span><span class="brand-name">Mathias Celle</span><span class="brand-role">Développeur d'applications</span></span></a>
+    <nav class="nav" id="nav" aria-label="Navigation principale"><a href="../index.html">Accueil</a><a href="../projets.html" aria-current="page">Projets</a><a href="../cv.html">CV</a><a href="../numerique-responsable.html">Numérique responsable</a><a href="../veille.html">Veille</a><a href="../contact.html">Contact</a></nav>
+    <button class="icon-btn theme-btn" type="button" aria-label="Changer de thème (clair ou sombre)">
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+    <button class="icon-btn menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Ouvrir le menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+<main id="contenu">
+
+<section class="pitch-bg page-head">
+  <div class="pitch-lines" aria-hidden="true"><svg viewBox="0 0 1200 640" preserveAspectRatio="xMidYMid slice" fill="none" stroke="currentColor" stroke-width="3">
+<rect x="40" y="30" width="1120" height="580"/><line x1="600" y1="30" x2="600" y2="610"/><circle cx="600" cy="320" r="92"/><circle cx="600" cy="320" r="5" fill="currentColor"/>
+<rect x="40" y="170" width="170" height="300"/><rect x="40" y="250" width="60" height="140"/><path d="M210 262 a78 78 0 0 1 0 116"/>
+<rect x="990" y="170" width="170" height="300"/><rect x="1100" y="250" width="60" height="140"/><path d="M990 262 a78 78 0 0 0 0 116"/>
+<path d="M40 48 a18 18 0 0 0 18 -18 M1142 30 a18 18 0 0 0 18 18 M40 592 a18 18 0 0 1 18 18 M1142 610 a18 18 0 0 1 18 -18"/></svg></div>
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="../index.html">Accueil</a><span aria-hidden="true">/</span><a href="../projets.html">Projets</a><span aria-hidden="true">/</span><span aria-current="page">API Citations</span></nav>
+    <h1 class="rise">Une API REST pour gérer une collection de citations</h1>
+    <p class="lead rise rise-2">Concevoir un CRUD complet en PHP, de la route HTTP jusqu'à la base de données</p>
+    <dl class="match-sheet rise rise-3" aria-label="Feuille de match du projet"><div><dt>Cadre</dt><dd>BTS SIO SLAM · atelier de professionnalisation (mission 1)</dd></div><div><dt>Période</dt><dd>Octobre 2025</dd></div><div><dt>Mon rôle</dt><dd>Développeur back-end</dd></div><div><dt>Livrables</dt><dd>API, page de démonstration, documentation</dd></div></dl>
+  </div>
+</section>
+<section class="section--tight">
+  <div class="wrap">
+    <figure class="cover"><button type="button" aria-label="Agrandir le rendu final" style="all:unset;cursor:zoom-in;display:block;width:100%"><img src="../assets/img/projets/api-cover.svg" alt="Page de démonstration de l'API Citations affichant quatre citations en cartes" width="1200" height="750"></button><figcaption>Rendu final : la page de démonstration consomme l'API et affiche les citations.</figcaption></figure>
+  </div>
+</section>
+<section class="section" style="padding-top:0">
+  <div class="wrap fiche">
+    <div class="fiche-main">
+      <div class="fiche-block" id="contexte"><span class="kicker">Avant-match</span><h2>Contexte et problématique</h2><p>Première mission de l'atelier de professionnalisation du BTS SIO : à partir d'un dépôt de départ fourni par l'équipe pédagogique, je devais construire le service qui stocke et distribue une collection de citations (texte, auteur, catégorie).</p><p>Dans une entreprise, ce type de service est la couche invisible qui alimente un site, une application mobile ou un outil interne. Il doit rester simple à consommer et ne jamais laisser passer une donnée incohérente.</p><p class="problem">Comment exposer des données de façon fiable, pour que n'importe quel client puisse les lire et les modifier sans jamais toucher directement à la base ?</p></div>
+      <div class="fiche-block" id="objectifs"><span class="kicker">Le plan de jeu</span><h2>Objectifs</h2><ul class="objectives"><li>Comprendre et appliquer les principes de l'architecture REST</li><li>Implémenter les quatre opérations CRUD de bout en bout</li><li>Renvoyer le bon code HTTP à chaque situation</li><li>Valider et sécuriser toutes les données reçues</li></ul></div>
+      <div class="fiche-block" id="missions"><span class="kicker">Mon poste</span><h2>Missions principales</h2><ul class="missions"><li>Modéliser la table <strong>citations</strong> et ses contraintes (texte 500 caractères, auteur 100 caractères)</li><li>Écrire le routeur et le contrôleur qui associent chaque verbe HTTP à une opération</li><li>Programmer l'accès aux données avec PDO et des requêtes préparées</li><li>Mettre en place la validation et un format d'erreur unique</li><li>Tester chaque route dans Postman, cas nominaux et cas d'erreur</li><li>Rédiger la documentation et publier une page de démonstration</li></ul></div>
+      <div class="fiche-block" id="etapes"><span class="kicker">Le déroulé</span><h2>Étapes clés</h2><ol class="steps"><li><h3>Analyse et modélisation</h3><p>Lecture du sujet, liste des besoins, puis schéma de la table : id, text, author, category, created_at, updated_at.</p></li><li><h3>Routage et contrôleur</h3><p>Un point d'entrée unique <code>index.php</code> lit la méthode et l'URL, puis appelle la bonne action du contrôleur.</p></li><li><h3>Accès aux données</h3><p>Requêtes préparées PDO sur SQLite, pagination (10 résultats par défaut) et filtre par auteur.</p></li><li><h3>Validation et erreurs</h3><p>Champs requis, longueurs maximales, réponses 400, 404 ou 500 au même format JSON avec le détail des erreurs.</p></li><li><h3>Tests</h3><p>Collection Postman couvrant les cinq routes, avec des scénarios volontairement invalides pour vérifier chaque code de retour.</p></li><li><h3>Documentation et démonstration</h3><p>Documentation des routes avec exemples cURL, JavaScript et Python, puis page de démonstration publiée sur GitHub Pages.</p></li></ol></div>
+      <div class="fiche-block" id="competences"><span class="kicker">Ce que j'ai mobilisé</span><h2>Compétences</h2><div class="skills-3"><div><h3>Techniques</h3><ul><li>Conception d'une API REST</li><li>PHP 8 orienté objet</li><li>SQL et requêtes préparées</li><li>Codes et en-têtes HTTP</li><li>Format JSON</li></ul></div><div><h3>Transversales</h3><ul><li>Lire et respecter un cahier des charges</li><li>Rédiger une documentation technique</li><li>Tester méthodiquement</li><li>Versionner avec Git</li></ul></div><div><h3>Humaines</h3><ul><li>Rigueur</li><li>Autonomie</li><li>Persévérance face aux bugs</li><li>Sens du détail</li></ul></div></div></div>
+      <div class="fiche-block" id="outils"><span class="kicker">L'équipement</span><h2>Outils utilisés</h2><ul class="tools"><li><b>PHP 8.3</b><span>Langage serveur</span></li><li><b>SQLite</b><span>Base de données fichier</span></li><li><b>PDO</b><span>Accès sécurisé à la base</span></li><li><b>Postman</b><span>Tests des routes</span></li><li><b>VS Code</b><span>Éditeur</span></li><li><b>Git · GitHub Pages</b><span>Versionnement et démo</span></li></ul></div>
+      <div class="fiche-block" id="apports"><span class="kicker">Lien avec la formation</span><h2>Apports académiques</h2><p>Compétences du référentiel du BTS SIO option SLAM mobilisées dans ce projet (B1 : support et mise à disposition de services, B2 : conception et développement d'applications, B3 : cybersécurité).</p><div class="table-wrap"><table><thead><tr><th scope="col">Compétence du référentiel</th><th scope="col">Mise en œuvre dans le projet</th></tr></thead><tbody><tr><td><strong>B2 · Concevoir et développer une solution applicative</strong></td><td>Architecture REST, développement des routes et des contrôleurs</td></tr><tr><td><strong>B2 · Gérer les données</strong></td><td>Modélisation de la table, requêtes SQL, pagination</td></tr><tr><td><strong>B3 · Cybersécurité d'une solution applicative</strong></td><td>Requêtes préparées contre l'injection SQL, validation des entrées</td></tr><tr><td><strong>B1 · Mettre à disposition un service informatique</strong></td><td>Tests, documentation et mise en ligne de la démonstration</td></tr></tbody></table></div></div>
+      <div class="fiche-block" id="responsable"><div class="green-box"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-8 5-13 15-14-1 10-6 15-14 15"/><path d="M5 19l7-7"/></svg> Numérique responsable</h3><ul><li>Réponses JSON légères et paginées : le client ne télécharge que ce qu'il affiche.</li><li>SQLite plutôt qu'un serveur de base de données : aucun service permanent à faire tourner pour un volume modeste.</li><li>PHP natif sans framework : moins de dépendances à maintenir et un code plus durable.</li></ul><p style="font-size:.95rem"><a href="../numerique-responsable.html">Ma démarche de numérique responsable</a></p></div></div>
+      <div class="fiche-block" id="illustrations"><span class="kicker">Les images du match</span><h2>Illustrations</h2><div class="gallery"><figure><button type="button" aria-label="Agrandir : Architecture"><img src="../assets/img/projets/api-1-architecture.svg" alt="Architecture : Parcours d'une requête, du client jusqu'à la base SQLite." loading="lazy" width="1200" height="750"></button><figcaption><b>Architecture.</b> Parcours d'une requête, du client jusqu'à la base SQLite.</figcaption></figure><figure><button type="button" aria-label="Agrandir : Tests Postman"><img src="../assets/img/projets/api-2-postman.svg" alt="Tests Postman : Route GET /citations avec pagination et réponse 200." loading="lazy" width="1200" height="750"></button><figcaption><b>Tests Postman.</b> Route GET /citations avec pagination et réponse 200.</figcaption></figure><figure><button type="button" aria-label="Agrandir : Les 5 routes"><img src="../assets/img/projets/api-3-endpoints.svg" alt="Les 5 routes : Chaque verbe HTTP, son opération et ses codes de retour." loading="lazy" width="1200" height="750"></button><figcaption><b>Les 5 routes.</b> Chaque verbe HTTP, son opération et ses codes de retour.</figcaption></figure><figure><button type="button" aria-label="Agrandir : Gestion d'erreur"><img src="../assets/img/projets/api-4-erreurs.svg" alt="Gestion d'erreur : Une requête invalide reçoit une réponse 400 détaillée." loading="lazy" width="1200" height="750"></button><figcaption><b>Gestion d'erreur.</b> Une requête invalide reçoit une réponse 400 détaillée.</figcaption></figure></div></div>
+      <div class="fiche-block" id="bilan"><span class="kicker">Analyse d'après-match</span><h2>Bilan réflexif</h2><div class="debrief"><div class="debrief-grid"><div><h3>Ce que j'ai appris</h3><p>Une API se conçoit du point de vue de celui qui la consomme. Des codes HTTP cohérents et des messages d'erreur précis font gagner un temps considérable au développeur front.</p></div><div><h3>Difficulté et solution</h3><p>Mes premières réponses d'erreur avaient toutes un format différent. J'ai centralisé leur construction dans une seule fonction, ce qui a aussi simplifié les tests.</p></div><div><h3>Pour aller plus loin</h3><p>Ajouter des tests automatisés avec PHPUnit, une authentification réelle par jeton et une description OpenAPI générée automatiquement.</p></div></div><p class="problem" style="font-style:normal">Ce projet a posé mes bases de développeur back-end : je sais désormais concevoir un service web qui protège ses données et reste simple à utiliser pour les autres développeurs.</p></div>
+        <div class="btn-row"><a class="btn btn--primary" href="https://okpsaihtam.github.io/mission-1-api-citations-template/" target="_blank" rel="noopener noreferrer">Voir la démonstration <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg><span class="sr-only"> (s'ouvre dans un nouvel onglet)</span></a><a class="btn btn--ghost" href="../projets.html">Tous les projets</a></div>
+      </div>
+      <nav class="project-nav" aria-label="Autres projets"><a href="stage-openscop.html"><small>Projet précédent</small><strong>Stage Openscop</strong></a><a href="techsolutions.html"><small>Projet suivant</small><strong>TechSolutions</strong></a></nav>
+    </div>
+    <aside class="aside" aria-label="Sommaire et lien du projet">
+      <div class="aside-box"><h2>Projet finalisé</h2><a class="btn btn--primary" href="https://okpsaihtam.github.io/mission-1-api-citations-template/" target="_blank" rel="noopener noreferrer">Voir la démonstration <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg><span class="sr-only"> (s'ouvre dans un nouvel onglet)</span></a></div>
+      <div class="aside-box toc-box"><h2>Sommaire</h2><ol class="toc"><li><a href="#contexte">Contexte</a></li><li><a href="#objectifs">Objectifs</a></li><li><a href="#missions">Missions</a></li><li><a href="#etapes">Étapes</a></li><li><a href="#competences">Compétences</a></li><li><a href="#outils">Outils</a></li><li><a href="#apports">Apports académiques</a></li><li><a href="#responsable">Numérique responsable</a></li><li><a href="#illustrations">Illustrations</a></li><li><a href="#bilan">Bilan réflexif</a></li></ol></div>
+      <div class="aside-box"><h2>Technologies</h2><ul class="chips"><li>PHP 8.3</li><li>REST</li><li>SQLite</li><li>Postman</li></ul></div>
+    </aside>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h2>Mathias Celle</h2>
+        <p>Développeur d'applications full-stack, orienté intégration de l'IA. Titulaire du BTS SIO option SLAM, en formation Développeur IA à l'EPSI.</p>
+      </div>
+      <div>
+        <h2>Plan du site</h2>
+        <ul><li><a href="../index.html">Accueil</a></li><li><a href="../projets.html">Projets</a></li><li><a href="../cv.html">CV</a></li><li><a href="../numerique-responsable.html">Numérique responsable</a></li><li><a href="../veille.html">Veille</a></li><li><a href="../contact.html">Contact</a></li><li><a href="../coulisses.html">Coulisses du portfolio</a></li></ul>
+      </div>
+      <div>
+        <h2>Réseaux</h2>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/mathias-celle-3b4b28291/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (nouvel onglet)</span></a></li>
+          <li><a href="https://github.com/Okpsaihtam" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (nouvel onglet)</span></a></li>
+          <li><a href="../contact.html">Formulaire de contact</a></li>
+          <li><a href="../assets/cv/Mathias-Celle-CV.pdf" download>CV en PDF</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Mathias Celle · Site statique sans traceur ni cookie</span>
+      <span class="chant">Allez les Verts</span>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>
